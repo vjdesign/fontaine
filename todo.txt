@@ -1,0 +1,74 @@
+The plan
+--------
+
+Issues
+1. Old versions of WordPress (WP) and woocommerce (WC)
+2. Theme not built using wp and wc way - code - there are no comments and no logical naming or structure
+3. 37 active plugins - some of these haven't been updated in past 2 years (need to find alternatives)
+4. Non-theme (i.e. plugin) functionality built into theme - built using PHPgrid which is not wp - https://wordpress.org/plugins/phpgrid/.
+
+Vijay
+deliver by 23 Nov 2015
+1. Build a light-weight responsive theme that works well with latest WordPress (WP) and woocommerce (WC)
+2. Ensure that theme would be easy to upgrade inline with future upgrades to wp and wc
+3. Build new templates to cater to new structure.
+    Latest version of wc only has 4 pages:
+    1. Shop
+    2. Cart
+    3. Checkout
+    4. My Account
+    We need to redirect lost pages to end-points
+    https://docs.woothemes.com/document/woocommerce-endpoints-2-1/
+    - Edit account page
+    - Edit address page
+    - Change password page
+    - Lost password page
+    - View order pages
+    - Customer logout
+    - Checkout pay page
+    - Checkout thanks page
+4. Ensure standard set up of new site works as before
+
+deliver by 7 Dec 2015
+5. Integrate paypal express
+
+the above does not include the below items where I need your help/clarity:
+
+What I need - your help (James or someone who has been updating the contents)
+-----------------------
+Calculating shipping on a per product before adding to cart
+What are your requirements?
+What services are you using (bigpost, depots?)
+Please explain how this works currently, and how you would like it to work?
+
+On a per product basis:
+What options do you set up, for example...
+http://fontaineind.com.au/wp-admin/post.php?post=1168&action=edit
+
+Can you please go through these backend menu items:
+1. Shipping Admin
+  - Cubic kg rate table
+  - Product table
+  - Post code table
+  - Algorithm table
+  - Warehouse cubic kg rate table
+  - Warehouse pickup list
+2. Calc. shipping
+
+Do you use the above items? - these were custom developed (non-standard code - not wp)
+How do you update (how frequently)?
+Are any of these integrated with front-end site? or are they used purely by staff for calculations?
+
+
+eg.
+Posts - last post was added/updated on 05/09/2015
+Pages - last updated 25/03/2013
+Slides - last updated 08/08/2015
+Comments - disabled on front-end (no comment form in blog), however I can see latest comment was 25/09/2015. Did you want comments completely disabled?
+Contact - 3 contact forms:
+  - Contact us - http://fontaineind.com.au/contact-us/
+  - Join us - http://fontaineind.com.au/join-us/ and
+  - Order tracking form.
+
+
+Mobile featured product - do you need a separate featured slider for mobile

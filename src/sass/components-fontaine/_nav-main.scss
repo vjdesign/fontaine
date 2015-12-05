@@ -1,0 +1,204 @@
+
+
+/* Buttons */
+.menu-toggle {
+cursor: pointer;
+}
+
+
+/* Assistive text */
+.assistive-text,
+.site .screen-reader-text {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.main-navigation .assistive-text:focus {
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 3px;
+  clip: auto !important;
+  color: #000;
+  display: block;
+  padding: 12px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 100000; /* Above WP toolbar */
+}
+
+.ad-gallery .ad-image-wrapper {
+  z-index: 1!important;
+  opacity: .99;
+}
+
+/* Navigation Menu */
+.main-navigation ul, main-navigation li {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+.main-navigation {
+  background: #38bebd;
+  color: #165f72;
+  z-index: 10!important;
+  position: relative;
+  line-height: 2;
+}
+.main-navigation li {
+
+  border-bottom: 1px solid #165f72;
+}
+.main-navigation a {
+  color: #165f72;
+  font-size: 1em;
+  line-height: 1.5;
+  text-decoration: none;
+  display: block;
+}
+.nav-menu>li>a {
+  color: white;
+  line-height: 2;
+}
+.nav-menu>li:hover>a {
+  background-color: #249fb7;
+  line-height: 2;
+}
+.main-navigation a:hover {
+  color: #21759b;
+}
+.main-navigation ul.nav-menu,
+.main-navigation div.nav-menu > ul {
+  display: none;
+}
+.main-navigation ul.nav-menu.toggled-on,
+.menu-toggle {
+  display: inline-block;
+}
+.main-navigation li ul {
+  display: none;
+}
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Minimum width of 40em. */
+@media screen and (min-width: 40em) {
+  .main-header .row {
+    margin-left: -1.4%;
+    margin-right: -1.4%;
+  }
+  .nav-wrap {
+    border-top: 1px solid #38bebd;
+    padding-top: 2px;
+    border-bottom: 1px solid #38bebd;
+    padding-bottom: 2px;
+    margin-left: -2.8%;
+    margin-right: -2.8%;
+  }
+  .main-navigation {
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    background: #38bebd;
+    background: -moz-linear-gradient(top,  #38bebd 0%, #38bebd 30%, #38bebd 80%, #165f70 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38bebd), color-stop(30%,#38bebd), color-stop(80%,#38bebd), color-stop(99%,#165f70));
+    background: -webkit-linear-gradient(top,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+    background: -o-linear-gradient(top,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+    background: -ms-linear-gradient(top,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+    background: linear-gradient(to bottom,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38bebd', endColorstr='#165f70',GradientType=0 );
+  }
+
+  .main-navigation ul.nav-menu,
+  .main-navigation div.nav-menu > ul {
+    display: inline-block !important;
+    text-align: left;
+    width: 100%;
+  }
+  .main-navigation ul {
+    margin: 0;
+    text-indent: 0;
+  }
+  .main-navigation li a,
+  .main-navigation li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .main-navigation li a {
+    border-bottom: 0;
+    color: #6a6a6a;
+    line-height: 3.5;
+    text-transform: lowercase;
+    white-space: nowrap;
+    color: #fff;
+  }
+  .nav-menu>li {
+    border-bottom: none;
+  }
+  .nav-menu>li>a {
+    color: white;
+    line-height: 2;
+    padding: 0 .5em;
+  }
+  .nav-menu>li>a:hover {
+    color: #000;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .main-navigation li a:hover {
+    color: #000;
+  }
+  .main-navigation li {
+    margin: 0 .5em 0 0;
+    position: relative;
+  }
+  .main-navigation li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+  }
+  .main-navigation li ul ul {
+    top: 0;
+    left: 100%;
+  }
+  .main-navigation ul li:hover > ul {
+    border-left: 0;
+    display: block;
+  }
+  .main-navigation li ul li a {
+    background: #249fb7;
+    border-bottom: 1px solid #ededed;
+    display: block;
+    font-size: 11px;
+    font-size: 0.785714286rem;
+    line-height: 2.181818182;
+    padding: 8px 10px;
+    padding: 0.571428571rem 0.714285714rem;
+    width: 180px;
+    width: 12.85714286rem;
+    white-space: normal;
+    z-index: 1;
+  }
+  .main-navigation li ul li a:hover {
+    background: #e3e3e3;
+    color: #444;
+  }
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current-menu-ancestor > a,
+  .main-navigation .current_page_item > a,
+  .main-navigation .current_page_ancestor > a {
+    color: #636363;
+    font-weight: bold;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}

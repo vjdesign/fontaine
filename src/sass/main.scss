@@ -1,0 +1,39 @@
+// Import the table styles for compiling
+
+	@import "config";
+	@import "mixins";
+	@import "components/normalize";
+	@import "components/grid";
+	@import "components/typography";
+	//@import "components/code";
+	@import "components/buttons";
+	@import "components/forms";
+	@import "components/svg";
+	@import "components/tables";
+	@import "components/overrides";
+	@import "components/print";
+	@import "components/wordpress-images";
+
+	@import "components-wc/woocommerce";
+	@import "components-wc/wclayout";
+	@import "components-wc/wcoverrides";
+
+	@import "components-plugins/plugins";
+	@import "components-plugins/responsive-slider";
+	//@import "components-plugins/jquery-ui";
+
+	@import "components-fontaine/header";
+	@import "components-fontaine/sidebar";
+	@import "components-fontaine/footer";
+	@import "components-fontaine/page";
+	@import "components-fontaine/post";
+	@import "components-fontaine/product";
+	@import "components-fontaine/homepage";
+	@import "components-fontaine/shipping-calc";
+	//@import "components-fontaine/shipping-admin"; /* Styles for shipping admin backend */
+
+	@import "components-fontaine/header";
+	@import "components-fontaine/nav-main";
+	@import "components-fontaine/nav-footer";
+	@import "components-fontaine/nav-social";
+	@import "components-fontaine/fontaine";
