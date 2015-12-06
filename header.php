@@ -65,7 +65,6 @@
 				<div class="grid-half">
 
 					<a href="<?php echo get_home_url(); ?>" title="Go to <?php bloginfo('name'); ?>"><h1 class="logo"><span></span><?php bloginfo('name'); ?></h1></a>
-					<a class="phone" href="tel:1300884081"><span>phone us on 1300 884 081</span></a>
 
 				</div>
 				<div class="grid-half">
