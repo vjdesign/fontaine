@@ -1,0 +1,13 @@
+/* Logo - image replacement - http://www.goldenapplewebdesign.com/image-replacement/ */
+.logo {
+	position:relative;
+	width:316px;
+	height:92px;
+	display: inline-block;
+}
+.logo span {
+	background:url('../img/fontaine_logo.jpg');
+	position:absolute;
+	width:316px;
+	height:92px;
+}

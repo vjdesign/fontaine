@@ -58,59 +58,6 @@ input[type=number] {
 	padding-right: 0;
 }
 
-#social-menu a {
-	text-decoration: none;
-	color: #666;
-}
-#social-menu .collapse a {
-	line-height: 16px;
-}
-#social-menu .collapse svg {
-	margin-right: .5em;
-}
-
-#social-menu svg {
-	width: 42px;
-	height: 42px;
-}
-
-@media (min-width: 40em) {
-	#social-menu {
-		float: right;
-		margin-top: .5em;
-		margin-bottom: -.4em;
-	}
-	#social-menu svg {
-		width: 21px;
-		height: 21px;
-	}
-	.cart-container {
-		float: right;
-		clear: both;
-	}
-}
-
-/* Logo - image replacement - http://www.goldenapplewebdesign.com/image-replacement/ */
-.logo {
-	position:relative;
-	width:316px;
-	height:92px;
-	display: block;
-	background-color: #eee;
-}
-.logo span {
-	background:url('../img/fontaine_logo.jpg');
-	position:absolute;
-	width:316px;
-	height:92px;
-}
-.phone {
-	display: block;
-	text-decoration: none;
-	color: #666;
-	background-color: #eee;
-}
-
 ul.products {
   margin-left: -1.4%;
   margin-right: -1.4%;
