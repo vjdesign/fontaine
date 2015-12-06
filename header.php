@@ -96,7 +96,7 @@
 				<div class="grid-full">
 					<?php
 						// Get site navigation
-						 get_template_part( 'nav-main', 'Site Navigation' );
+						 get_template_part( 'inc/nav-main', 'Site Navigation' );
 						//get_template_part( 'nav-sf', 'Site Navigation' );
 					?>
 				</div>

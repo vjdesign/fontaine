@@ -1,0 +1,36 @@
+#social-menu a {
+	text-decoration: none;
+	color: #666;
+}
+#social-menu .collapse a {
+	line-height: 16px;
+}
+#social-menu .collapse svg {
+	margin-right: .5em;
+}
+
+#social-menu svg {
+	width: 42px;
+	height: 42px;
+}
+#social-menu .icon-square {
+  background-color: #e5e5e5;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+@media (min-width: 40em) {
+	#social-menu {
+		float: right;
+		margin-top: .5em;
+		margin-bottom: -.4em;
+	}
+	#social-menu svg {
+		width: 21px;
+		height: 21px;
+	}
+	.cart-container {
+		float: right;
+		clear: both;
+	}
+}

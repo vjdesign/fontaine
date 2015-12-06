@@ -2,7 +2,7 @@
  * Theme Name: Fontaine v1.0.0: A lightweight theme based on the awesome front-end boilerplate called Kraken [http://github.com/cferdinandi/kraken] and WordPress framework called Keel, both by Chris Ferdinandi [http://gomakethings.com]
  * (c) 2015 Author: Vijay Rudraraju
  * MIT License
- * Theme URI: https://github.com/cferdinandi/keel
+ * Theme URI: https://github.com/vjdesign/fontaine
  */
 
 /*!

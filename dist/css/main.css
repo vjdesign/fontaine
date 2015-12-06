@@ -2,7 +2,7 @@
  * Theme Name: Fontaine v1.0.0: A lightweight theme based on the awesome front-end boilerplate called Kraken [http://github.com/cferdinandi/kraken] and WordPress framework called Keel, both by Chris Ferdinandi [http://gomakethings.com]
  * (c) 2015 Author: Vijay Rudraraju
  * MIT License
- * Theme URI: https://github.com/cferdinandi/keel
+ * Theme URI: https://github.com/vjdesign/fontaine
  */
 
 @charset "UTF-8";
@@ -5471,6 +5471,54 @@ html[xmlns] .slides {
   /* line 59, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
   footer .copyright .grid-two-thirds {
     text-align: right;
+  }
+}
+
+/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social-menu a, #social-menu .link-block-styled {
+  text-decoration: none;
+  color: #666;
+}
+
+/* line 5, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social-menu .collapse a, #social-menu .collapse .link-block-styled {
+  line-height: 16px;
+}
+
+/* line 8, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social-menu .collapse svg {
+  margin-right: .5em;
+}
+
+/* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social-menu svg {
+  width: 42px;
+  height: 42px;
+}
+
+/* line 16, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social-menu .icon-square {
+  background-color: #e5e5e5;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+@media (min-width: 40em) {
+  /* line 23, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  #social-menu {
+    float: right;
+    margin-top: .5em;
+    margin-bottom: -.4em;
+  }
+  /* line 28, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  #social-menu svg {
+    width: 21px;
+    height: 21px;
+  }
+  /* line 32, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  .cart-container {
+    float: right;
+    clear: both;
   }
 }
 
