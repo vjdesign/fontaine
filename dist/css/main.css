@@ -5475,50 +5475,84 @@ html[xmlns] .slides {
 }
 
 /* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* line 5, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu a, #social-menu .link-block-styled {
   text-decoration: none;
   color: #666;
 }
 
-/* line 5, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 9, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu .collapse a, #social-menu .collapse .link-block-styled {
   line-height: 16px;
 }
 
-/* line 8, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu .collapse svg {
   margin-right: .5em;
 }
 
-/* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 16, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu svg {
   width: 42px;
   height: 42px;
+  vertical-align: middle;
 }
 
-/* line 16, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 21, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu .icon-square {
   background-color: #e5e5e5;
   padding: 2px;
   border-radius: 3px;
 }
 
+/* line 26, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#socialmodal ul li {
+  margin-bottom: .5em;
+}
+
+/* line 29, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#socialmodal ul li a, #socialmodal ul li .link-block-styled {
+  font-size: 1.5em;
+  line-height: 42px;
+}
+
 @media (min-width: 40em) {
-  /* line 23, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 35, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  #social {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* line 39, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #social-menu {
     float: right;
     margin-top: .5em;
     margin-bottom: -.4em;
   }
-  /* line 28, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 44, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #social-menu svg {
     width: 21px;
     height: 21px;
   }
-  /* line 32, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 48, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  #socialmodal ul li a, #socialmodal ul li .link-block-styled {
+    font-size: 1em;
+    line-height: 21px;
+  }
+  /* line 52, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   .cart-container {
     float: right;
     clear: both;
+  }
+  /* line 56, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  #social.row {
+    border-left: 0;
+    border-right: 0;
+    margin-right: -.5em;
   }
 }
 

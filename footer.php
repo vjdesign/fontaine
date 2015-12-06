@@ -89,11 +89,16 @@
 				</div>
 			</div>
 
-
+			<div id="social" class="row">
+				<?php
+					// Get social menu
+					 get_template_part( 'inc/nav-social', 'Social Menu' );
+				?>
+			</div>
 
 			<div class="row">
 				<div class="grid-full">
-					<div class="showroom">
+					<div class="showroom desktop">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/bottom-showroom-ad.jpg" alt="" />
 						<p>
 							Melbourne Showroom  |  8-10 Conquest Way Hallam Victoria Australia 3803  |  03 9703 1345
@@ -120,12 +125,7 @@
 
 		<div><!-- end of .row -->
 		</div><!-- end of .inner-wrapper -->
-		<div id="social" class="">
-			<?php
-				// Get social menu
-				 get_template_part( 'inc/nav-social', 'Social Menu' );
-			?>
-		</div>
+
 
 	</div><!-- end of .container -->
 	<?php wp_footer(); ?>

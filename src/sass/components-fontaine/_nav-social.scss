@@ -1,3 +1,7 @@
+#social {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 #social-menu a {
 	text-decoration: none;
 	color: #666;
@@ -12,14 +16,26 @@
 #social-menu svg {
 	width: 42px;
 	height: 42px;
+  vertical-align: middle;
 }
 #social-menu .icon-square {
   background-color: #e5e5e5;
   padding: 2px;
   border-radius: 3px;
 }
+#socialmodal ul li {
+    margin-bottom: .5em;
+}
+#socialmodal ul li a {
+  font-size: 1.5em;
+  line-height: 42px;
+}
 
 @media (min-width: 40em) {
+  #social {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 	#social-menu {
 		float: right;
 		margin-top: .5em;
@@ -29,8 +45,17 @@
 		width: 21px;
 		height: 21px;
 	}
+  #socialmodal ul li a {
+    font-size: 1em;
+    line-height: 21px;
+  }
 	.cart-container {
 		float: right;
 		clear: both;
 	}
+  #social.row {
+    border-left: 0;
+    border-right: 0;
+    margin-right: -.5em;
+  }
 }
