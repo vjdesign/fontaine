@@ -4,12 +4,13 @@ test/results
 test/coverage
 
 #Folders
+docs
+fontaine
+HTML
 phpgrid
 options
-wc_templates
-woocommerce-old
 unused
-docs
+wc-templates
 
 ## OS X
 .DS_Store

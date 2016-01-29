@@ -6,25 +6,42 @@
  */
 
 
- // remove dashicons
- function wpdocs_dequeue_dashicon() {
- 	if (current_user_can( 'manage_options' )) {
- 	    return;
- 	}
- 	wp_deregister_style('dashicons');
- }
- add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
-
 	/**
 	 * Load theme files.
 	 */
 	function keel_load_theme_files() {
 
 		/* remove styles and scripts for plugins*/
+    //wp_deregister_style('dashicons');
 		wp_dequeue_style('contact-form-7');
 		wp_dequeue_script('contact-form-7');
 		wp_dequeue_style('responsive-slider');
-    //wp_dequeue_script('responsive-slider_flex-slider');
+
+    // http://clicknathan.com/web-design/removing-woocommerce-scripts-and-styles/
+    wp_dequeue_style('add-to-cart');
+    wp_dequeue_script('add-to-cart');
+    wp_deregister_style('woocommerce-general');
+    wp_deregister_style('woocommerce-layout');
+    wp_deregister_style('woocommerce-smallscreen');
+    if (function_exists( 'is_woocommerce' )) {
+     if (!is_woocommerce() && !is_cart() && !is_checkout() && !is_account_page() ) { // if we're not on a Woocommerce page, dequeue all of these scripts
+      wp_dequeue_script('wc-add-to-cart');
+      wp_dequeue_script('jquery-blockui');
+      wp_dequeue_script('jquery-placeholder');
+      wp_dequeue_script('woocommerce');
+      wp_dequeue_script('jquery-cookie');
+      wp_dequeue_script('wc-cart-fragments');
+      }
+    }
+
+		// http://wpsites.net/web-design/add-woocommerce-style-sheet-in-child-theme-for-easy-modification/
+		// add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
+
+    //wp_dequeue_script('responsiveslides'); // cannot de-register simple-responsive slider easily
+
+
 
 		/* Remove unnecessary stuff intriduced by WordPress */
 		wp_deregister_style( 'open-sans' );
@@ -41,19 +58,10 @@
 	}
 	add_action('wp_enqueue_scripts', 'keel_load_theme_files');
 
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 
-	/**
-	 * Include feature detection scripts inline in the header
-	 */
-	function keel_initialize_theme_detects() {
-		?>
-			<script>
-				<?php echo file_get_contents( get_template_directory_uri() . '/js/detects.js' ); ?>
-			</script>
-		<?php
-	}
-	add_action('wp_head', 'keel_initialize_theme_detects', 30);
 
 
 
@@ -66,6 +74,7 @@
 				// Scripts initializations here
 				houdini.init();
 				modals.init();
+				rightHeight.init();
 
 			</script>
 		<?php
@@ -174,12 +183,17 @@
 		register_nav_menus(
 			array(
 				'primary' => __( 'Primary Menu' ),
-				'footer' => __( 'Footer Menu' )
+        'footer_find_out_about' => __( 'Footer - Find out about' ),
+        'footer_resources' => __( 'Footer - Resources' ),
+        'footer_whatsinstore_1' => __( 'Footer - What\'s in store - menu 1' ),
+        'footer_whatsinstore_2' => __( 'Footer - What\'s in store - menu 2' ),
+        'footer_whatsinstore_3' => __( 'Footer - What\'s in store - menu 3' ),
+				'footer_page_bottom' => __( 'Footer - Page Bottom Menu' ),
+        'footer_page_bottom_mobile' => __( 'Footer - Mobile Page Bottom Menu' )
 			)
 		);
 	}
 	add_action( 'init', 'keel_register_menus' );
-
 
 
 	/**
@@ -506,9 +520,27 @@
 			'after_title'   => '</h2>',
 		) );
 		register_sidebar( array(
+			'name'          => esc_html__( 'WC Sidebar', 'keel' ),
+			'id'            => 'sidebar-wc',
+			'description'   => esc_html__( 'Add widgets here to appear in your WooCommerce sidebar.', 'keel' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		) );
+		register_sidebar( array(
 			'name'          => esc_html__( 'Footer Navigation', 'keel' ),
 			'id'            => 'nav-footer',
 			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'keel' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		) );
+		register_sidebar( array(
+			'name'          => esc_html__( 'Woocommerce Filter by Price', 'keel' ),
+			'id'            => 'wc-price-filter-vj',
+			'description'   => esc_html__( 'Add the Woocommerce Price filter widget here to appear in your product category pages.', 'keel' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -518,30 +550,30 @@
 
 		///////////////////////// SIDEBARS  ////////////////////////////////////////////
 
-register_sidebar( array(
-	'name' => __( 'Sale Products'),
-	'id' => 'sale-products',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Header SCart'),
-	'id' => 's-cart',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Search Products'),
-	'id' => 'search-products',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Mobile Search Products'),
-	'id' => 'mobile-search-products',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Price Filter'),
-	'id' => 'price-filter',
-) );
+// register_sidebar( array(
+// 	'name' => __( 'Sale Products'),
+// 	'id' => 'sale-products',
+// ) );
+//
+// register_sidebar( array(
+// 	'name' => __( 'Header SCart'),
+// 	'id' => 's-cart',
+// ) );
+//
+// register_sidebar( array(
+// 	'name' => __( 'Search Products'),
+// 	'id' => 'search-products',
+// ) );
+//
+// register_sidebar( array(
+// 	'name' => __( 'Mobile Search Products'),
+// 	'id' => 'mobile-search-products',
+// ) );
+//
+// register_sidebar( array(
+// 	'name' => __( 'Price Filter'),
+// 	'id' => 'price-filter',
+// ) );
 
 register_sidebar( array(
 	'name' => __( 'Shop Join Sale'),
@@ -585,12 +617,9 @@ register_sidebar( array(
 		return $fragments;
 	}
 
-  // http://wpsites.net/web-design/add-woocommerce-style-sheet-in-child-theme-for-easy-modification/
-	add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-
 	// https://docs.woothemes.com/document/customise-the-woocommerce-breadcrumb/
-	add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
-	function jk_woocommerce_breadcrumbs() {
+	add_filter( 'woocommerce_breadcrumb_defaults', 'woocommerce_breadcrumb_defaults_modified' );
+	function woocommerce_breadcrumb_defaults_modified() {
 	    return array(
 	            'delimiter'   => '',
 	            'wrap_before' => '<ul class="breadcrumb">',
@@ -900,13 +929,18 @@ function woocommerce_clear_cart_url() {
 
 // Add a custom user role
 
+// https://css-tricks.com/snippets/wordpress/remove-the-28px-push-down-from-the-admin-bar/#comment-1596226
+function my_filter_head() {
+  remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'my_filter_head');
 
-/* Remove Contact Form 7 Links from dashboard menu items if not admin */
 if (!current_user_can( 'manage_options' )) {
 
-  show_admin_bar( false );
+  show_admin_bar( false ); // only show admin bar when logged in
 
-	function remove_wpcf7() {
+
+	function remove_wpcf7() { /* Remove Contact Form 7 Links from dashboard menu items if not admin */
 	    remove_menu_page( 'wpcf7' );
 	}
 
@@ -1054,3 +1088,134 @@ function custom_colors() {
 add_action('admin_head', 'custom_colors');
 
 */
+
+
+
+// Add autocomplete search functionality to default WordPress search form -
+// http://code.tutsplus.com/tutorials/enhancing-the-search-form-with-typeaheadjs--wp-30844
+
+function woocommerce_current_category_vj() {
+
+	$terms1 = get_the_terms( get_the_ID(), 'product_cat' );
+	query_posts( 'posts_per_page=20' );
+	foreach ( $terms1 as $term )
+	{
+		$catname = $term->name;
+		$catslug = $term->slug;
+		$url = get_term_link( $term->slug, 'product_cat' );
+	}
+	echo '<a href="' . $url . '">' . $catname . '</a>';
+}
+
+/**
+ * List products in a category shortcode
+ *
+ * @access public
+ * @param array $atts
+ * @return string
+ */
+function woocommerce_product_category_extended( $atts ){
+	global $woocommerce_loop;
+
+  	if ( empty( $atts ) ) return;
+
+	extract( shortcode_atts( array(
+		'per_page' 		=> '12',
+		'columns' 		=> '4',
+	  	'orderby'   	=> 'title',
+	  	'order'     	=> 'asc',
+	  	'category'		=> ''
+		), $atts ) );
+
+	if ( ! $category ) return;
+
+  	$args = array(
+		'post_type'	=> 'product',
+		'post_status' => 'publish',
+		'ignore_sticky_posts'	=> 1,
+		'orderby' => $orderby,
+		'order' => $order,
+		'posts_per_page' => $per_page,
+		'meta_query' => array(
+			array(
+				'key' => '_visibility',
+				'value' => array('catalog', 'visible'),
+				'compare' => 'IN'
+			)
+		),
+		'tax_query' => array(
+	    	array(
+		    	'taxonomy' => 'product_cat',
+				'terms' => array( esc_attr($category) ),
+				'field' => 'slug',
+				'operator' => 'IN'
+			)
+	    )
+	);
+
+  	ob_start();
+
+	$products = new WP_Query( $args );
+
+	$woocommerce_loop['columns'] = $columns;
+
+	if ( $products->have_posts() ) : ?>
+
+		<ul class="products">
+
+			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+				<?php
+				echo '<li><a href="'.get_permalink().'">' . get_the_title() . '</a></li>';
+				?>
+			<?php endwhile; // end of the loop. ?>
+
+		</ul>
+
+	<?php endif;
+
+	wp_reset_query();
+
+	return ob_get_clean();
+}
+add_shortcode('product_category_extended', 'woocommerce_product_category_extended');
+
+// https://docs.woothemes.com/document/editing-product-data-tabs/
+// add_filter( 'woocommerce_product_tabs', 'woocommerce_product_tabs_extended', 98 );
+//
+// function woocommerce_product_tabs_extended( $tabs ) {
+//
+// 		global $product, $post;
+// 		if ( $post->post_content ) {
+// 			unset( $tabs['description'] );      	// Remove the description tab
+// 			$tabs['additional_information']['title'] = __( 'Additional info' );	// Rename the additional information tab
+// 			$tabs['product_enquirey']['title'] = __( 'Ask a question' );
+// 		}
+// 		return $tabs;
+// }
+
+if ( !function_exists( 'rename_woocommerce_tab' ) ) {
+    function rename_woocommerce_tab( $tabs ) {
+        global $product;
+				unset( $tabs['description'] );      	// Remove the description tab
+				// $tabs['additional_information']['title'] = __( 'Additional info' );	// Rename the additional information tab
+				$tabs['product_enquirey']['title'] = __( 'Ask a question' );
+        if ( $product->has_attributes() || $product->has_dimensions() || $product->has_weight() ) {
+					// if($tabs[ 'additional_information' ]!==''){
+					 	$tabs['additional_information']['title'] = __( 'Additional info' );	// Rename the additional information tab
+					// }
+				}
+        return $tabs;
+    }
+}
+add_filter( 'woocommerce_product_tabs', 'rename_woocommerce_tab', 98 );
+
+
+//http://envy.krolyn.com/tutorial/stock-status-shop-catalog/
+function wc_display_stock_status() {
+    global $product;
+    if ( $product->is_in_stock() ) {
+        echo '<div class="stock" >' . $product->get_stock_quantity() . __( ' in stock', 'envy' ) . '</div>';
+    } else {
+        echo '<div class="out-of-stock" >' . __( 'out of stock', 'envy' ) . '</div>';
+    }
+}

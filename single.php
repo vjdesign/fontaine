@@ -16,14 +16,14 @@ get_header(); ?>
 	?>
 		<?php
 			// Insert the post content
-			get_template_part( 'content', 'Post Content' );
+			get_template_part( 'inc/content', 'Post Content' );
 		?>
 	<?php endwhile; ?>
 
 <?php else : ?>
 	<?php
 		// If no content, include the "No post found" template
-		get_template_part( 'no-posts', 'No Posts Template' );
+		get_template_part( 'inc/no-posts', 'No Posts Template' );
 	?>
 <?php endif; ?>
 

@@ -5,6 +5,14 @@
  * http://github.com/cferdinandi/keel
  */
 
+
+ $( document ).ready(function() {
+     $('.more-content').hide();
+ 		$('.more-link').on('click',function(){
+ 			$('.more-content').slideToggle('slow');
+ 		});
+ });
+
  /*
   * classList.js: Cross-browser full element.classList implementation.
   * 1.1.20150312
@@ -14,7 +22,6 @@
   *   See https://github.com/eligrey/classList.js/blob/master/LICENSE.md
   */
  if("document" in self){if(!("classList" in document.createElement("_"))){(function(j){"use strict";if(!("Element" in j)){return}var a="classList",f="prototype",m=j.Element[f],b=Object,k=String[f].trim||function(){return this.replace(/^\s+|\s+$/g,"")},c=Array[f].indexOf||function(q){var p=0,o=this.length;for(;p<o;p++){if(p in this&&this[p]===q){return p}}return -1},n=function(o,p){this.name=o;this.code=DOMException[o];this.message=p},g=function(p,o){if(o===""){throw new n("SYNTAX_ERR","An invalid or illegal string was specified")}if(/\s/.test(o)){throw new n("INVALID_CHARACTER_ERR","String contains an invalid character")}return c.call(p,o)},d=function(s){var r=k.call(s.getAttribute("class")||""),q=r?r.split(/\s+/):[],p=0,o=q.length;for(;p<o;p++){this.push(q[p])}this._updateClassName=function(){s.setAttribute("class",this.toString())}},e=d[f]=[],i=function(){return new d(this)};n[f]=Error[f];e.item=function(o){return this[o]||null};e.contains=function(o){o+="";return g(this,o)!==-1};e.add=function(){var s=arguments,r=0,p=s.length,q,o=false;do{q=s[r]+"";if(g(this,q)===-1){this.push(q);o=true}}while(++r<p);if(o){this._updateClassName()}};e.remove=function(){var t=arguments,s=0,p=t.length,r,o=false,q;do{r=t[s]+"";q=g(this,r);while(q!==-1){this.splice(q,1);o=true;q=g(this,r)}}while(++s<p);if(o){this._updateClassName()}};e.toggle=function(p,q){p+="";var o=this.contains(p),r=o?q!==true&&"remove":q!==false&&"add";if(r){this[r](p)}if(q===true||q===false){return q}else{return !o}};e.toString=function(){return this.join(" ")};if(b.defineProperty){var l={get:i,enumerable:true,configurable:true};try{b.defineProperty(m,a,l)}catch(h){if(h.number===-2146823252){l.enumerable=false;b.defineProperty(m,a,l)}}}else{if(b[f].__defineGetter__){m.__defineGetter__(a,i)}}}(self))}else{(function(){var b=document.createElement("_");b.classList.add("c1","c2");if(!b.classList.contains("c2")){var c=function(e){var d=DOMTokenList.prototype[e];DOMTokenList.prototype[e]=function(h){var g,f=arguments.length;for(g=0;g<f;g++){h=arguments[g];d.call(this,h)}}};c("add");c("remove")}b.classList.toggle("c3",false);if(b.classList.contains("c3")){var a=DOMTokenList.prototype.toggle;DOMTokenList.prototype.toggle=function(d,e){if(1 in arguments&&!this.contains(d)===!e){return e}else{return a.call(this,d)}}}b=null}())}};
-
 
  /*! Houdini v8.1.0 | (c) 2015 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/houdini */
  !function(t,e){"function"==typeof define&&define.amd?define([],e(t)):"object"==typeof exports?module.exports=e(t):t.houdini=e(t)}("undefined"!=typeof global?global:this.window||this.global,function(t){"use strict";var e,n={},o="querySelector"in document&&"addEventListener"in t&&"classList"in document.createElement("_"),a={selector:"[data-collapse]",toggleActiveClass:"active",contentActiveClass:"active",initClass:"js-houdini",callback:function(){}},r=function(t,e,n){if("[object Object]"===Object.prototype.toString.call(t))for(var o in t)Object.prototype.hasOwnProperty.call(t,o)&&e.call(n,t[o],o,t);else for(var a=0,r=t.length;r>a;a++)e.call(n,t[a],a,t)},c=function(){var t={},e=!1,n=0,o=arguments.length;"[object Boolean]"===Object.prototype.toString.call(arguments[0])&&(e=arguments[0],n++);for(var a=function(n){for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e&&"[object Object]"===Object.prototype.toString.call(n[o])?t[o]=c(!0,t[o],n[o]):t[o]=n[o])};o>n;n++){var r=arguments[n];a(r)}return t},s=function(t,e){var n,o,a=e.charAt(0);for("["===a&&(e=e.substr(1,e.length-2),n=e.split("="),n.length>1&&(o=!0,n[1]=n[1].replace(/"/g,"").replace(/'/g,"")));t&&t!==document;t=t.parentNode){if("."===a&&t.classList.contains(e.substr(1)))return t;if("#"===a&&t.id===e.substr(1))return t;if("["===a&&t.hasAttribute(n[0])){if(!o)return t;if(t.getAttribute(n[0])===n[1])return t}if(t.tagName.toLowerCase()===e)return t}return null},i=function(t,e){if(!t.classList.contains(e)){var n=t.querySelector("iframe"),o=t.querySelector("video");if(n){var a=n.src;n.src=a}o&&o.pause()}},l=function(t,e){if(!t.classList.contains(e.toggleActiveClass)&&t.hasAttribute("data-group")){var n=t.getAttribute("data-group"),o=document.querySelectorAll('[data-group="'+n+'"]');r(o,function(t){var n=document.querySelector(t.getAttribute("data-collapse"));t.classList.remove(e.toggleActiveClass),n.classList.remove(e.contentActiveClass)})}};n.toggleContent=function(t,e,n){var o=c(o||a,n||{}),r=document.querySelector(e);l(t,o),t.classList.toggle(o.toggleActiveClass),r.classList.toggle(o.contentActiveClass),i(r,o.contentActiveClass),o.callback(t,e)};var u=function(t){var o=s(t.target,e.selector);if(o){("a"===o.tagName.toLowerCase()||"button"===o.tagName.toLowerCase())&&t.preventDefault();var a=o.hasAttribute("data-collapse")?o.getAttribute("data-collapse"):o.parentNode.getAttribute("data-collapse");n.toggleContent(o,a,e)}};return n.destroy=function(){e&&(document.documentElement.classList.remove(e.initClass),document.removeEventListener("click",u,!1),e=null)},n.init=function(t){o&&(n.destroy(),e=c(a,t||{}),document.documentElement.classList.add(e.initClass),document.addEventListener("click",u,!1))},n});
@@ -586,6 +593,46 @@ var branch;
  }
 
  addLoadListener(function() { dropdownMenu('navigation'); });
+
+ /**
+ * navigation.js
+ *
+ * Handles toggling the navigation menu for small screens.
+ */
+ ( function() {
+ var nav = document.getElementById( 'site-navigation' ), menu;
+ var button = document.getElementById( 'toggleMenu' );
+
+ if ( ! nav )
+   return;
+ menu   = nav.getElementsByTagName( 'ul' )[0];
+ if ( ! button )
+   return;
+
+ // Hide button if menu is missing or empty.
+ if ( ! menu || ! menu.childNodes.length ) {
+   button.style.display = 'none';
+   return;
+ }
+
+ button.onclick = function() {
+   if ( -1 == menu.className.indexOf( 'nav-menu' ) )
+     menu.className = 'nav-menu';
+
+   if ( -1 != button.className.indexOf( 'toggled-on' ) ) {
+     button.className = button.className.replace( ' toggled-on', '' );
+     menu.className = menu.className.replace( ' toggled-on', '' );
+   } else {
+     button.className += ' toggled-on';
+     menu.className += ' toggled-on';
+   }
+ };
+
+
+
+
+ } )();
+
 
  // (function () {
  //

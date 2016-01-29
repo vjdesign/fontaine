@@ -1,6 +1,6 @@
 /*!
  * Theme Name: Fontaine v1.0.0: A lightweight theme based on the awesome front-end boilerplate called Kraken [http://github.com/cferdinandi/kraken] and WordPress framework called Keel, both by Chris Ferdinandi [http://gomakethings.com]
- * (c) 2015 Author: Vijay Rudraraju
+ * (c) 2016 Author: Vijay Rudraraju
  * MIT License
  * Theme URI: https://github.com/vjdesign/fontaine
  */
@@ -991,7 +991,6 @@ input[type="search"]::-webkit-search-decoration {
   width: 85%;
   padding-left: 0.9375em;
   padding-right: 2.5em;
-  border-radius: 1.3125em;
   -webkit-transition: width 300ms ease-in;
           transition: width 300ms ease-in;
 }
@@ -1006,7 +1005,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Special styling for search icon as button
  */
-/* line 183, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
+/* line 182, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
 .btn-search {
   display: inline;
   color: #808080;
@@ -1016,17 +1015,17 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 0;
 }
 
-/* line 191, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
+/* line 190, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
 .btn-search .icon {
   fill: #808080;
 }
 
-/* line 195, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
+/* line 194, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
 .btn-search:hover {
   color: #5a5a5a;
 }
 
-/* line 198, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
+/* line 197, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components/_forms.scss */
 .btn-search:hover .icon {
   fill: #5a5a5a;
 }
@@ -1684,2139 +1683,677 @@ td {
 }
 
 /* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.clear, .woocommerce .woocommerce-breadcrumb:after, .woocommerce .woocommerce-error:after, .woocommerce .woocommerce-info:after, .woocommerce .woocommerce-message:after {
+.clear {
   clear: both;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .reset_variations, .woocommerce form .form-row label.hidden {
-  visibility: hidden;
+/* line 2, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.nobr {
+  white-space: nowrap;
 }
 
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@font-face {
-  font-family: star;
-  src: url(../fonts/star.eot);
-  src: url(../fonts/star.eot?#iefix) format("embedded-opentype"), url(../fonts/star.woff) format("woff"), url(../fonts/star.ttf) format("truetype"), url(../fonts/star.svg#star) format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: WooCommerce;
-  src: url(../fonts/WooCommerce.eot);
-  src: url(../fonts/WooCommerce.eot?#iefix) format("embedded-opentype"), url(../fonts/WooCommerce.woff) format("woff"), url(../fonts/WooCommerce.ttf) format("truetype"), url(../fonts/WooCommerce.svg#WooCommerce) format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-p.demo_store {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  width: 100%;
-  font-size: 1em;
-  padding: 1em 0;
+/* sub categories loop price css */
+/* line 4, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.lprice {
   text-align: center;
-  background-color: #a46497;
-  color: #fff;
-  z-index: 99998;
-  box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-p.demo_store a, p.demo_store .link-block-styled {
-  color: #fff;
+/* line 9, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.lprice span.amount {
+  color: #37BEBC;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 5px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.admin-bar p.demo_store {
-  top: 32px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .blockUI.blockOverlay {
-  position: relative;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .blockUI.blockOverlay:before, .woocommerce .loader:before {
-  height: 1em;
-  width: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -.5em;
-  margin-top: -.5em;
-  display: block;
-  content: "";
-  -webkit-animation: spin 1s ease-in-out infinite;
-  animation: spin 1s ease-in-out infinite;
-  background: url(../images/icons/loader.svg) center center;
-  background-size: cover;
-  line-height: 1;
-  text-align: center;
-  font-size: 2em;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce a.remove, .woocommerce .remove.link-block-styled {
-  display: block;
-  font-size: 1.5em;
-  height: 1em;
-  width: 1em;
-  text-align: center;
-  line-height: 1;
-  border-radius: 100%;
-  color: red !important;
+/* line 18, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.lprice ins {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #37BEBD;
   text-decoration: none;
-  font-weight: 700;
-  border: 0;
+  font-weight: bold;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce a.remove:hover, .woocommerce .remove.link-block-styled:hover, .woocommerce .link-block:hover .remove.link-block-styled, .link-block:hover .woocommerce .remove.link-block-styled {
-  color: #fff !important;
-  background: red;
+/* line 27, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.lprice ins span.amount {
+  font-size: 14px;
+  color: #ED1C24;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message {
-  padding: 1em 2em 1em 3.5em !important;
-  margin: 0 0 2em !important;
-  position: relative;
-  background-color: #f7f6f7;
-  color: #515151;
-  border-top: 3px solid #a46497;
-  list-style: none !important;
-  width: auto;
-  word-wrap: break-word;
+/* line 35, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.greybar {
+  width: 100%;
+  height: 20px;
+  background: #D1D3D4;
+  text-align: center;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error:after, .woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:after, .woocommerce .woocommerce-info:before, .woocommerce .woocommerce-message:after, .woocommerce .woocommerce-message:before {
-  content: " ";
-  display: table;
+/* line 43, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.greybar a, div.greybar .link-block-styled {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #135F73;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:before, .woocommerce .woocommerce-message:before {
-  font-family: WooCommerce;
-  content: "\e028";
-  display: inline-block;
-  position: absolute;
-  top: 1em;
-  left: 1.5em;
+/* line 52, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#price_section del, #price_section del span.amount {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #37BEBD;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button {
+/* line 59, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#price_section ins, #price_section ins span.amount {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ED1C24;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 68, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#content del {
+  color: #37BEBD;
+}
+
+/* line 73, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#content del span.amount {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #37BEBD;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 82, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#content ins {
+  text-decoration: none;
+}
+
+/* line 87, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#content ins span.amount {
+  font-size: 14px;
+  color: #ED1C24;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 95, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.input-text {
+  height: 25px;
+  width: 130px;
+}
+
+/* line 101, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.count {
+  color: #000;
+  background: none;
+}
+
+/* line 104, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.product_gallery .ad-gallery .ad-image-wrapper {
+  margin: 0;
+  width: 400px;
+  height: 410px;
+  display: block;
+  border: none;
+}
+
+/* line 113, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.ad-gallery .ad-nav {
+  width: 400px;
+  height: 95px;
+  display: block;
+  text-align: center;
+}
+
+/* line 121, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.product div.images, #content div.product div.images {
+  width: 100%;
+}
+
+/* line 126, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.cart-collaterals .cart_totals table {
+  width: 48%;
   float: right;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error li, .woocommerce .woocommerce-info li, .woocommerce .woocommerce-message li {
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-message {
-  border-top-color: #8fae1b;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-message:before {
-  content: "\e015";
-  color: #8fae1b;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-info {
-  border-top-color: #1e85be;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-info:before {
-  color: #1e85be;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error {
-  border-top-color: #b81c23;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-error:before {
-  content: "\e016";
-  color: #b81c23;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce small.note {
-  display: block;
-  color: #777;
-  font-size: .857em;
-  margin-top: 10px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-breadcrumb {
-  margin: 0 0 1em;
-  padding: 0;
-  font-size: .92em;
-  color: #777;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-breadcrumb:after, .woocommerce .woocommerce-breadcrumb:before {
-  content: " ";
+/* line 135, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 {
+  background: #E6E7E9;
+  min-height: 240px;
+  height: auto;
   display: table;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-breadcrumb a, .woocommerce .woocommerce-breadcrumb .link-block-styled {
-  color: #777;
+/* line 143, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents {
+  width: 380px;
+  padding: 10px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .quantity .qty {
-  width: 3.631em;
+/* line 149, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .cart_qty {
+  width: 380px;
+  height: 50px;
+}
+
+/* line 155, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .warehouse_1 {
+  width: 380px;
+  height: 50px;
+  display: block;
+}
+
+/* line 162, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .qty_text {
+  float: left;
+  width: 60px;
+  color: #165E76;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-top: 7px;
+}
+
+/* line 173, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .qty_number {
+  float: left;
+  width: 70px;
+  text-align: left;
+}
+
+/* line 180, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .delivery_options {
+  float: right;
+  width: 250px;
+  color: #165E76;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 7px;
+}
+
+/* line 191, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .warehouse_1 .pickup_text {
+  float: left;
+  width: 110px;
+  color: #165E76;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-top: 14px;
+}
+
+/* line 202, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #innercart_contents .warehouse_1 .pickup_options {
+  float: left;
+  width: 140px;
+  padding-top: 14px;
+  text-align: left;
+}
+
+/* line 211, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#innercart_contents .form-row input#pcode {
+  width: 150px;
+  height: 27px;
+  color: #165E76;
+  font-weight: bold;
+}
+
+/* line 219, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#innercart_contents .form-row-wide {
+  /*	width:380px;*/
+  padding-bottom: 20px;
+}
+
+/* line 225, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#innercart_contents .form-row-wide .pcode_input {
+  float: left;
+  text-align: left;
+  margin-right: 5px;
+}
+
+/* line 232, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#innercart_contents .form-row-wide .ship_but {
+  float: left;
+  width: 205px;
+  text-align: left;
+}
+
+/* line 239, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#innercart_contents #bigpost {
+  float: left;
+  width: 205px;
+  text-align: left;
+}
+
+/* line 246, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 #add2cart {
+  padding-left: 79px;
+  display: block;
   text-align: center;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product {
-  margin-bottom: 0;
-  position: relative;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .product_title {
-  clear: none;
-  margin-top: 0;
-  padding: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments .add_review:after, .woocommerce .products ul:after, .woocommerce div.product form.cart:after, .woocommerce div.product p.cart:after, .woocommerce nav.woocommerce-pagination ul, .woocommerce ul.products:after {
-  clear: both;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product p.price, .woocommerce div.product span.price {
-  color: #77a464;
-  font-size: 1.25em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product p.price ins, .woocommerce div.product span.price ins {
-  background: inherit;
-  font-weight: 700;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product p.price del, .woocommerce div.product span.price del {
-  opacity: .5;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product p.stock {
-  font-size: .92em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .stock {
-  color: #77a464;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .out-of-stock {
-  color: red;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-product-rating {
-  margin-bottom: 1.618em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.images, .woocommerce div.product div.summary {
-  margin-bottom: 2em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.images img {
-  display: block;
+/* line 253, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells {
   width: 100%;
-  height: auto;
+  margin-top: 10px;
+  background: #eee;
+}
+
+/* line 260, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells h2 {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* line 266, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells ul.products {
+  width: 98%;
+}
+
+/* line 272, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells ul.products li.product {
+  width: 155px;
+  margin-left: 45px;
+}
+
+/* line 279, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells ul.products li.first {
+  margin-left: 0;
+  padding-left: 23px;
+}
+
+/* line 287, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells ul.products li.last {
+  margin-right: 0;
+}
+
+/* line 292, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+div.cross-sells .lprice {
+  padding-top: 5px;
+}
+
+/* line 297, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.cross-sells .list_details {
+  height: 200px;
+  padding-bottom: 5px;
+}
+
+/* line 303, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#tab-description {
+  padding-bottom: 20px;
+}
+
+/*
+ul.products div.list_details
+{
+	height:375px;
+}
+
+ul.order_details li.order, ul.order_details li.date, ul.order_details li.total, ul.order_details li.method
+{
+	font-weight: bold;
+	line-height: 18px;
+	padding: 9px 12px;
+	background: #FCF3F6;
+	font-size: 12px;
+	width:20%;
+}*/
+/* line 325, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#content button.button.alt {
+  background: none;
+  border: none;
   box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.images div.thumbnails {
-  padding-top: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.social {
-  text-align: right;
-  margin: 0 0 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.social span {
-  margin: 0 0 0 2px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.social span span {
-  margin: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.social span .stButton .chicklets {
-  padding-left: 16px;
-  width: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product div.social iframe {
-  float: left;
-  margin-top: 3px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs {
-  list-style: none;
-  padding: 0 0 0 1em;
-  margin: 0 0 1.618em;
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li {
-  border: 1px solid #d3ced2;
-  background-color: #ebe9eb;
-  display: inline-block;
-  position: relative;
-  z-index: 0;
-  border-radius: 4px 4px 0 0;
-  margin: 0 -5px;
-  padding: 0 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce div.product .woocommerce-tabs ul.tabs li .link-block-styled {
-  display: inline-block;
-  padding: .5em 0;
-  font-weight: 700;
-  color: #515151;
-  text-decoration: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart:after, .woocommerce div.product form.cart:before, .woocommerce div.product p.cart:after, .woocommerce div.product p.cart:before {
-  display: table;
-  content: " ";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li .link-block-styled:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li .link-block:hover .link-block-styled, .link-block:hover .woocommerce div.product .woocommerce-tabs ul.tabs li .link-block-styled {
-  text-decoration: none;
-  color: #6b6b6b;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-  background: #fff;
-  z-index: 2;
-  border-bottom-color: #fff;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce div.product .woocommerce-tabs ul.tabs li.active .link-block-styled {
-  color: inherit;
-  text-shadow: inherit;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before {
-  box-shadow: 2px 2px 0 #fff;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active:after {
-  box-shadow: -2px 2px 0 #fff;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce div.product .woocommerce-tabs ul.tabs li:before {
-  border: 1px solid #d3ced2;
-  position: absolute;
-  bottom: -1px;
-  width: 5px;
-  height: 5px;
-  content: " ";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li:before {
-  left: -6px;
-  -moz-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-width: 0 1px 1px 0;
-  box-shadow: 2px 2px 0 #ebe9eb;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs li:after {
-  right: -6px;
-  -moz-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-width: 0 0 1px 1px;
-  box-shadow: -2px 2px 0 #ebe9eb;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs ul.tabs:before {
-  position: absolute;
-  content: " ";
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid #d3ced2;
-  z-index: 1;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product .woocommerce-tabs .panel {
-  margin: 0 0 2em;
+  background: url("../img/add2cart_btn.jpg") no-repeat 0 0;
+  width: 310px;
+  height: 69px;
   padding: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart, .woocommerce div.product p.cart {
-  margin-bottom: 2em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart div.quantity {
-  float: left;
-  margin: 0 4px 0 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart table {
-  border-width: 0 0 1px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart table td {
-  padding-left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart table div.quantity {
-  float: none;
   margin: 0;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart table small.stock {
-  display: block;
-  float: none;
+/* line 340, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#content button.button.alt1 {
+  background: none;
+  border: none;
+  box-shadow: none;
+  background: url("../img/add2cart_btn_new.jpg") no-repeat 0 0;
+  width: 310px;
+  height: 69px;
+  padding: 0;
+  margin: 0;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .variations {
-  margin-bottom: 1em;
-  border: 0;
+/* line 355, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.price_slider {
+  width: 90%;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .variations td, .woocommerce div.product form.cart .variations th {
-  border: 0;
+/* line 360, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.upsells ul.products {
+  width: 155px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .variations label {
-  font-weight: 700;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .variations select {
+/* line 365, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.upsells.products ul.products li.product, .upsells.products ul li.product {
   width: 100%;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+/* line 372, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.upsells.products ul, .upsells ul.products {
+  margin: 0 auto;
+}
+
+/* line 377, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#variation_options {
+  width: 100%;
+  height: 50px;
+}
+
+/* line 383, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#variation_options #variation_value {
   float: left;
+  color: #165e76;
+  font-size: 14px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .variations td.label {
-  padding-right: 1em;
+/* line 392, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#variation_options .product_clearselection {
+  float: right;
+  text-align: left;
+  padding-left: 10px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .variations td {
-  vertical-align: top;
+/* line 399, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#variation_options .single_variation {
+  display: inline;
+  padding-left: 5px;
+  padding-top: 3px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .woocommerce-variation-description p {
-  margin-bottom: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .wc-no-matching-variations {
+/* line 406, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+#cart_content1 .single_variation span.amount {
   display: none;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .button {
-  vertical-align: middle;
-  float: left;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .group_table td.label {
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce div.product form.cart .group_table td {
-  vertical-align: top;
-  padding-bottom: .5em;
-  border: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce span.onsale {
-  min-height: 3.236em;
-  min-width: 3.236em;
-  padding: .202em;
-  font-weight: 700;
-  position: absolute;
-  text-align: center;
-  line-height: 3.236;
-  top: -.5em;
-  left: -.5em;
-  margin: 0;
-  border-radius: 100%;
-  background-color: #77a464;
-  color: #fff;
-  font-size: .857em;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .products ul, .woocommerce ul.products {
-  margin: 0 0 1em;
-  padding: 0;
-  list-style: none;
-  clear: both;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .products ul:after, .woocommerce .products ul:before, .woocommerce ul.products:after, .woocommerce ul.products:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .products ul li, .woocommerce ul.products li {
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .onsale {
-  top: 0;
-  right: 0;
-  left: auto;
-  margin: -0.5em -0.5em 0 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product h3 {
-  padding: .5em 0;
-  margin: 0;
-  font-size: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product a, .woocommerce ul.products li.product .link-block-styled {
-  text-decoration: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product a img, .woocommerce ul.products li.product .link-block-styled img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 0 1em;
-  box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product strong {
-  display: block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .star-rating {
-  font-size: .857em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .button {
-  margin-top: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .price {
-  color: #77a464;
-  display: block;
-  font-weight: 400;
-  margin-bottom: .5em;
-  font-size: .857em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .price del {
-  color: inherit;
-  opacity: .5;
-  display: block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .price ins {
-  background: 0 0;
-  font-weight: 700;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.products li.product .price .from {
-  font-size: .67em;
-  margin: -2px 0 0;
-  text-transform: uppercase;
-  color: rgba(132, 132, 132, 0.5);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-ordering, .woocommerce .woocommerce-result-count {
-  margin: 0 0 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-ordering select {
-  vertical-align: top;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce nav.woocommerce-pagination {
-  text-align: center;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce nav.woocommerce-pagination ul {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 0;
-  border: 1px solid #d3ced2;
-  border-right: 0;
-  margin: 1px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce nav.woocommerce-pagination ul li {
-  border-right: 1px solid #d3ced2;
-  padding: 0;
-  margin: 0;
-  float: left;
-  display: inline;
-  overflow: hidden;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li .link-block-styled, .woocommerce nav.woocommerce-pagination ul li span {
-  margin: 0;
-  text-decoration: none;
-  line-height: 1;
-  font-size: 1em;
-  font-weight: 400;
-  padding: .5em;
-  min-width: 1em;
-  display: block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li .link-block-styled:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li .link-block-styled:hover, .woocommerce nav.woocommerce-pagination ul li .link-block:hover .link-block-styled, .link-block:hover .woocommerce nav.woocommerce-pagination ul li .link-block-styled, .woocommerce nav.woocommerce-pagination ul li span.current {
-  background: #ebe9eb;
-  color: #8a7e88;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce .button.link-block-styled, .woocommerce button.button, .woocommerce input.button {
+/* line 411, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button, .button.link-block-styled, button.button, input.button, #respond input#submit, #content input.button {
   font-size: 100%;
   margin: 0;
-  line-height: 1;
+  line-height: 1em;
   cursor: pointer;
   position: relative;
   font-family: inherit;
   text-decoration: none;
   overflow: visible;
-  padding: 0.618em 1em;
-  font-weight: 700;
-  border-radius: 3px;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
   left: auto;
-  color: #515151;
-  background-color: #ebe9eb;
-  border: 0;
-  white-space: nowrap;
-  display: inline-block;
-  background-image: none;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  text-shadow: none;
+  text-shadow: 0 1px 0 #ffffff;
+  color: #5e5e5e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid #c7c0c7;
+  background: #f7f6f7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#dfdbdf));
+  background: -webkit-linear-gradient(#f7f6f7, #dfdbdf);
+  background: -moz-linear-gradient(center top, #f7f6f7 0%, #dfdbdf 100%);
+  background: -moz-gradient(center top, #f7f6f7 0%, #dfdbdf 100%);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.075), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.loading, .woocommerce a.button.loading, .woocommerce .button.loading.link-block-styled, .woocommerce button.button.loading, .woocommerce input.button.loading {
-  opacity: .25;
-  padding-right: 2.618em;
+/* line 428, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button.loading, .button.loading.link-block-styled, button.button.loading,
+input.button.loading, #respond input#submit.loading,
+#content input.button.loading {
+  color: #777777;
+  border: 1px solid #f7f6f7;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.loading:after, .woocommerce a.button.loading:after, .woocommerce .button.loading.link-block-styled:after, .woocommerce button.button.loading:after, .woocommerce input.button.loading:after {
-  font-family: WooCommerce;
-  content: "\e01c";
-  vertical-align: top;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 400;
-  position: absolute;
-  top: .618em;
-  right: 1em;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.added:after, .woocommerce a.button.added:after, .woocommerce .button.added.link-block-styled:after, .woocommerce button.button.added:after, .woocommerce input.button.added:after {
-  font-family: WooCommerce;
-  content: "\e017";
-  margin-left: .53em;
-  vertical-align: bottom;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce .button.link-block-styled:hover, .woocommerce .link-block:hover .button.link-block-styled, .link-block:hover .woocommerce .button.link-block-styled, .woocommerce button.button:hover, .woocommerce input.button:hover {
-  background-color: #dad8da;
-  text-decoration: none;
-  background-image: none;
-  color: #515151;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce .button.alt.link-block-styled, .woocommerce button.button.alt, .woocommerce input.button.alt {
-  background-color: #a46497;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce .button.alt.link-block-styled:hover, .woocommerce .link-block:hover .button.alt.link-block-styled, .link-block:hover .woocommerce .button.alt.link-block-styled, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-  background-color: #935386;
-  color: #fff;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce .button.alt.disabled.link-block-styled, .woocommerce a.button.alt.disabled:hover, .woocommerce .button.alt.disabled.link-block-styled:hover, .woocommerce .link-block:hover .button.alt.disabled.link-block-styled, .link-block:hover .woocommerce .button.alt.disabled.link-block-styled, .woocommerce a.button.alt:disabled, .woocommerce .button.alt.link-block-styled:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce .button.alt.link-block-styled:disabled:hover, .woocommerce .link-block:hover .button.alt.link-block-styled:disabled, .link-block:hover .woocommerce .button.alt.link-block-styled:disabled, .woocommerce a.button.alt:disabled[disabled], .woocommerce .button.alt.link-block-styled:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce .button.alt.link-block-styled:disabled[disabled]:hover, .woocommerce .link-block:hover .button.alt.link-block-styled:disabled[disabled], .link-block:hover .woocommerce .button.alt.link-block-styled:disabled[disabled], .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover {
-  background-color: #a46497;
-  color: #fff;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce .button.disabled.link-block-styled, .woocommerce a.button:disabled, .woocommerce .button.link-block-styled:disabled, .woocommerce a.button:disabled[disabled], .woocommerce .button.link-block-styled:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
-  color: inherit;
-  cursor: not-allowed;
-  opacity: .5;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover, .woocommerce #respond input#submit:disabled[disabled]:hover, .woocommerce a.button.disabled:hover, .woocommerce .button.disabled.link-block-styled:hover, .woocommerce .link-block:hover .button.disabled.link-block-styled, .link-block:hover .woocommerce .button.disabled.link-block-styled, .woocommerce a.button:disabled:hover, .woocommerce .button.link-block-styled:disabled:hover, .woocommerce .link-block:hover .button.link-block-styled:disabled, .link-block:hover .woocommerce .button.link-block-styled:disabled, .woocommerce a.button:disabled[disabled]:hover, .woocommerce .button.link-block-styled:disabled[disabled]:hover, .woocommerce .link-block:hover .button.link-block-styled:disabled[disabled], .link-block:hover .woocommerce .button.link-block-styled:disabled[disabled], .woocommerce button.button.disabled:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover, .woocommerce input.button.disabled:hover, .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover {
-  color: inherit;
-  background-color: #ebe9eb;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .cart .button, .woocommerce .cart input.button {
-  float: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce a.added_to_cart, .woocommerce .added_to_cart.link-block-styled {
-  padding-top: .5em;
-  white-space: nowrap;
-  display: inline-block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments .add_review:after, .woocommerce #reviews #comments .add_review:before, .woocommerce #reviews #comments ol.commentlist li .comment-text:after, .woocommerce #reviews #comments ol.commentlist li .comment-text:before, .woocommerce #reviews #comments ol.commentlist:after, .woocommerce #reviews #comments ol.commentlist:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews h2 small {
-  float: right;
-  color: #777;
-  font-size: 15px;
-  margin: 10px 0 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews h2 small a, .woocommerce #reviews h2 small .link-block-styled {
-  text-decoration: none;
-  color: #777;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews h3 {
-  margin: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #respond {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comment {
-  height: 75px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments h2 {
-  clear: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #review_form #respond:after, .woocommerce #reviews #comments ol.commentlist li .comment-text:after, .woocommerce #reviews #comments ol.commentlist:after, .woocommerce .woocommerce-product-rating:after, .woocommerce td.product-name dl.variation:after {
-  clear: both;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist {
-  margin: 0;
-  width: 100%;
-  background: 0 0;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist li {
-  padding: 0;
-  margin: 0 0 20px;
-  position: relative;
-  background: 0;
-  border: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist li .meta {
-  color: #777;
-  font-size: .75em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist li img.avatar {
-  float: left;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 3px;
-  width: 32px;
-  height: auto;
-  background: #ebe9eb;
-  border: 1px solid #e4e1e3;
-  margin: 0;
-  box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist li .comment-text {
-  margin: 0 0 0 50px;
-  border: 1px solid #e4e1e3;
-  border-radius: 4px;
-  padding: 1em 1em 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist li .comment-text p {
-  margin: 0 0 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
-  font-size: .83em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist ul.children {
-  list-style: none;
-  margin: 20px 0 0 50px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist ul.children .star-rating {
-  display: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments ol.commentlist #respond {
-  border: 1px solid #e4e1e3;
-  border-radius: 4px;
-  padding: 1em 1em 0;
-  margin: 20px 0 0 50px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #reviews #comments .commentlist > li:before {
+/* line 431, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button.loading:before, .button.loading.link-block-styled:before, button.button.loading:before,
+input.button.loading:before, #respond input#submit.loading:before,
+#content input.button.loading:before {
   content: "";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .star-rating {
-  float: right;
-  overflow: hidden;
-  position: relative;
-  height: 1em;
-  line-height: 1;
-  font-size: 1em;
-  width: 5.4em;
-  font-family: star;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .star-rating:before {
-  content: "\73\73\73\73\73";
-  color: #d3ced2;
-  float: left;
-  top: 0;
-  left: 0;
   position: absolute;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .star-rating span {
-  overflow: hidden;
-  float: left;
   top: 0;
+  right: 0;
   left: 0;
+  bottom: 0;
+  background: url(../img/ajax-loader.gif) center no-repeat rgba(255, 255, 255, 0.65);
+}
+
+/* line 436, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button.added:before, .button.added.link-block-styled:before, button.button.added:before,
+input.button.added:before, #respond input#submit.added:before,
+#content input.button.added:before {
+  content: "";
   position: absolute;
-  padding-top: 1.5em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .star-rating span:before {
-  content: "\53\53\53\53\53";
-  top: 0;
-  position: absolute;
-  left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-product-rating {
-  line-height: 2;
-  display: block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_attributes td, .woocommerce table.shop_attributes th {
-  line-height: 1.5;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-  border-top: 0;
-  margin: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-product-rating:after, .woocommerce .woocommerce-product-rating:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .woocommerce-product-rating .star-rating {
-  margin: 0.5em 4px 0 0;
-  float: left;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .products .star-rating {
-  display: block;
-  margin: 0 0 0.5em;
-  float: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .hreview-aggregate .star-rating {
-  margin: 10px 0 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #review_form #respond {
-  position: static;
-  margin: 0;
-  width: auto;
-  padding: 0;
-  background: 0 0;
-  border: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #review_form #respond:after, .woocommerce #review_form #respond:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #review_form #respond p {
-  margin: 0 0 10px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #review_form #respond .form-submit input {
-  left: auto;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce #review_form #respond textarea {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars {
-  position: relative;
-  font-size: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a, .woocommerce p.stars .link-block-styled {
-  display: inline-block;
-  font-weight: 700;
-  margin-right: 1em;
-  text-indent: -9999px;
-  position: relative;
-  border-bottom: 0 !important;
-  outline: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a:last-child, .woocommerce p.stars .link-block-styled:last-child {
-  border-right: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-1, .woocommerce p.stars .star-1.link-block-styled, .woocommerce p.stars a.star-2, .woocommerce p.stars .star-2.link-block-styled, .woocommerce p.stars a.star-3, .woocommerce p.stars .star-3.link-block-styled, .woocommerce p.stars a.star-4, .woocommerce p.stars .star-4.link-block-styled, .woocommerce p.stars a.star-5, .woocommerce p.stars .star-5.link-block-styled {
-  border-right: 1px solid #ccc;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-1:after, .woocommerce p.stars .star-1.link-block-styled:after, .woocommerce p.stars a.star-2:after, .woocommerce p.stars .star-2.link-block-styled:after, .woocommerce p.stars a.star-3:after, .woocommerce p.stars .star-3.link-block-styled:after, .woocommerce p.stars a.star-4:after, .woocommerce p.stars .star-4.link-block-styled:after, .woocommerce p.stars a.star-5:after, .woocommerce p.stars .star-5.link-block-styled:after {
-  font-family: WooCommerce;
+  height: 16px;
+  width: 16px;
+  top: 0.35em;
+  right: -26px;
   text-indent: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-1, .woocommerce p.stars .star-1.link-block-styled {
-  width: 2em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-1:after, .woocommerce p.stars .star-1.link-block-styled:after {
-  content: "\e021";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-1.active:after, .woocommerce p.stars .star-1.active.link-block-styled:after, .woocommerce p.stars a.star-1:hover:after, .woocommerce p.stars .star-1.link-block-styled:hover:after, .woocommerce p.stars .link-block:hover .star-1.link-block-styled:after, .link-block:hover .woocommerce p.stars .star-1.link-block-styled:after {
-  content: "";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-2, .woocommerce p.stars .star-2.link-block-styled {
-  width: 3em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-2:after, .woocommerce p.stars .star-2.link-block-styled:after {
-  content: "\e021\e021";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-2.active:after, .woocommerce p.stars .star-2.active.link-block-styled:after, .woocommerce p.stars a.star-2:hover:after, .woocommerce p.stars .star-2.link-block-styled:hover:after, .woocommerce p.stars .link-block:hover .star-2.link-block-styled:after, .link-block:hover .woocommerce p.stars .star-2.link-block-styled:after {
-  content: "";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-3, .woocommerce p.stars .star-3.link-block-styled {
-  width: 4em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-3:after, .woocommerce p.stars .star-3.link-block-styled:after {
-  content: "\e021\e021\e021";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-3.active:after, .woocommerce p.stars .star-3.active.link-block-styled:after, .woocommerce p.stars a.star-3:hover:after, .woocommerce p.stars .star-3.link-block-styled:hover:after, .woocommerce p.stars .link-block:hover .star-3.link-block-styled:after, .link-block:hover .woocommerce p.stars .star-3.link-block-styled:after {
-  content: "";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-4, .woocommerce p.stars .star-4.link-block-styled {
-  width: 5em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-4:after, .woocommerce p.stars .star-4.link-block-styled:after {
-  content: "\e021\e021\e021\e021";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-4.active:after, .woocommerce p.stars .star-4.active.link-block-styled:after, .woocommerce p.stars a.star-4:hover:after, .woocommerce p.stars .star-4.link-block-styled:hover:after, .woocommerce p.stars .link-block:hover .star-4.link-block-styled:after, .link-block:hover .woocommerce p.stars .star-4.link-block-styled:after {
-  content: "";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-5, .woocommerce p.stars .star-5.link-block-styled {
-  width: 6em;
-  border: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-5:after, .woocommerce p.stars .star-5.link-block-styled:after {
-  content: "\e021\e021\e021\e021\e021";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.stars a.star-5.active:after, .woocommerce p.stars .star-5.active.link-block-styled:after, .woocommerce p.stars a.star-5:hover:after, .woocommerce p.stars .star-5.link-block-styled:hover:after, .woocommerce p.stars .link-block:hover .star-5.link-block-styled:after, .link-block:hover .woocommerce p.stars .star-5.link-block-styled:after {
-  content: "";
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_attributes {
-  border: 0;
-  border-top: 1px dotted rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.618em;
-  width: 100%;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_attributes th {
-  width: 150px;
-  font-weight: 700;
-  padding: 8px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_attributes td {
-  font-style: italic;
-  padding: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_attributes td p {
-  margin: 0;
-  padding: 8px 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_attributes .alt td, .woocommerce table.shop_attributes .alt th {
-  background: rgba(0, 0, 0, 0.025);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_table {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 -1px 24px 0;
-  text-align: left;
-  width: 100%;
-  border-collapse: separate;
-  border-radius: 5px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_table th {
-  font-weight: 700;
-  padding: 9px 12px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_table td {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 6px 12px;
-  vertical-align: middle;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_table td small {
-  font-weight: 400;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_table tbody:first-child tr:first-child td, .woocommerce table.shop_table tbody:first-child tr:first-child th {
-  border-top: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th {
-  font-weight: 700;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.my_account_orders {
-  font-size: .85em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.my_account_orders td, .woocommerce table.my_account_orders th {
-  padding: 4px 8px;
-  vertical-align: middle;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.my_account_orders .button {
-  white-space: nowrap;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.my_account_orders .order-actions {
-  text-align: right;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce table.my_account_orders .order-actions .button {
-  margin: 0.125em 0 0.125em 0.25em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name dl.variation {
-  margin: .25em 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name dl.variation:after, .woocommerce td.product-name dl.variation:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name dl.variation dd, .woocommerce td.product-name dl.variation dt {
-  display: inline-block;
-  float: left;
-  margin-bottom: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name dl.variation dt {
-  font-weight: 700;
-  padding: 0 0 0.25em;
-  margin: 0 4px 0 0;
-  clear: left;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl:after, .woocommerce ul.cart_list li:after, .woocommerce ul.product_list_widget li dl:after, .woocommerce ul.product_list_widget li:after {
-  clear: both;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name dl.variation dd {
-  padding: 0 0 0.25em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name dl.variation dd p:last-child {
-  margin-bottom: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-name p.backorder_notification {
-  font-size: .83em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce td.product-quantity {
-  min-width: 80px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list, .woocommerce ul.product_list_widget {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li {
-  padding: 4px 0;
-  margin: 0;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li:after, .woocommerce ul.cart_list li:before, .woocommerce ul.product_list_widget li:after, .woocommerce ul.product_list_widget li:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li a, .woocommerce ul.cart_list li .link-block-styled, .woocommerce ul.product_list_widget li a, .woocommerce ul.product_list_widget li .link-block-styled {
-  display: block;
-  font-weight: 700;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
-  float: right;
-  margin-left: 4px;
-  width: 32px;
-  height: auto;
-  box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl, .woocommerce ul.product_list_widget li dl {
-  margin: 0;
-  padding-left: 1em;
-  border-left: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl:after, .woocommerce ul.cart_list li dl:before, .woocommerce ul.product_list_widget li dl:after, .woocommerce ul.product_list_widget li dl:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl dd, .woocommerce ul.cart_list li dl dt, .woocommerce ul.product_list_widget li dl dd, .woocommerce ul.product_list_widget li dl dt {
-  display: inline-block;
-  float: left;
-  margin-bottom: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl dt, .woocommerce ul.product_list_widget li dl dt {
-  font-weight: 700;
-  padding: 0 0 0.25em;
-  margin: 0 4px 0 0;
-  clear: left;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .order_details:after, .woocommerce .widget_layered_nav ul li:after, .woocommerce .widget_shopping_cart .buttons:after, .woocommerce-account .addresses .title:after, .woocommerce-cart .wc-proceed-to-checkout:after, .woocommerce.widget_shopping_cart .buttons:after {
-  clear: both;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl dd, .woocommerce ul.product_list_widget li dl dd {
-  padding: 0 0 0.25em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li dl dd p:last-child, .woocommerce ul.product_list_widget li dl dd p:last-child {
-  margin-bottom: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul.cart_list li .star-rating, .woocommerce ul.product_list_widget li .star-rating {
-  float: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_shopping_cart .total, .woocommerce.widget_shopping_cart .total {
-  border-top: 3px double #ebe9eb;
-  padding: 4px 0 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_shopping_cart .total strong, .woocommerce.widget_shopping_cart .total strong {
-  min-width: 40px;
-  display: inline-block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_shopping_cart .cart_list li, .woocommerce.widget_shopping_cart .cart_list li {
-  padding-left: 2em;
-  position: relative;
-  padding-top: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_shopping_cart .cart_list li a.remove, .woocommerce .widget_shopping_cart .cart_list li .remove.link-block-styled, .woocommerce.widget_shopping_cart .cart_list li a.remove, .woocommerce.widget_shopping_cart .cart_list li .remove.link-block-styled {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_shopping_cart .buttons:after, .woocommerce .widget_shopping_cart .buttons:before, .woocommerce.widget_shopping_cart .buttons:after, .woocommerce.widget_shopping_cart .buttons:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row {
-  padding: 3px;
-  margin: 0 0 6px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row [placeholder]:focus::-webkit-input-placeholder {
-  -webkit-transition: opacity 0.5s 0.5s ease;
-  transition: opacity 0.5s 0.5s ease;
-  opacity: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row label {
-  line-height: 2;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row label.inline {
-  display: inline;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row select {
-  cursor: pointer;
-  margin: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row .required {
-  color: red;
-  font-weight: 700;
-  border: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row .input-checkbox {
-  display: inline;
-  margin: -2px 8px 0 0;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  outline: 0;
-  line-height: 1;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row textarea {
-  height: 4em;
-  line-height: 1.5;
-  display: block;
-  box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row .select2-container {
-  width: 100%;
-  line-height: 2em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select {
-  border-color: #a00;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
-  border-color: #69bf29;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row ::-webkit-input-placeholder {
-  line-height: normal;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row :-moz-placeholder {
-  line-height: normal;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form .form-row :-ms-input-placeholder {
-  line-height: normal;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
-  border: 1px solid #d3ced2;
-  padding: 20px;
-  margin: 2em 0;
-  text-align: left;
-  border-radius: 5px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul#shipping_method {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul#shipping_method li {
-  margin: 0;
-  padding: 0.25em 0 0.25em 22px;
-  text-indent: -22px;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce ul#shipping_method .amount {
-  font-weight: 700;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce p.woocommerce-shipping-contents {
-  margin: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .order_details {
-  margin: 0 0 1.5em;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .order_details:after, .woocommerce .order_details:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .order_details li {
-  float: left;
-  margin-right: 2em;
-  text-transform: uppercase;
-  font-size: .715em;
-  line-height: 1;
-  border-right: 1px dashed #d3ced2;
-  padding-right: 2em;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .order_details li strong {
-  display: block;
-  font-size: 1.4em;
-  text-transform: none;
-  line-height: 1.5;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .order_details li:last-of-type {
-  border: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav ul li {
-  padding: 0 0 1px;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav ul li:after, .woocommerce .widget_layered_nav ul li:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav ul li.chosen a:before, .woocommerce .widget_layered_nav ul li.chosen .link-block-styled:before, .woocommerce .widget_layered_nav_filters ul li a:before, .woocommerce .widget_layered_nav_filters ul li .link-block-styled:before {
-  font-weight: 400;
-  line-height: 1;
-  content: "";
-  color: #a00;
-  font-family: WooCommerce;
-  speak: none;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
+  background: url(../img/success.png) no-repeat;
+}
+
+/* line 440, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button:hover, .button.link-block-styled:hover, .link-block:hover .button.link-block-styled, button.button:hover, input.button:hover,
+#respond input#submit:hover, #content input.button:hover {
+  background: #f7f6f7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#d3ced3));
+  background: -webkit-linear-gradient(#f7f6f7, #d3ced3);
+  background: -moz-linear-gradient(center top, #f7f6f7 0%, #d3ced3 100%);
+  background: -moz-gradient(center top, #f7f6f7 0%, #d3ced3 100%);
   text-decoration: none;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav ul li a, .woocommerce .widget_layered_nav ul li .link-block-styled, .woocommerce .widget_layered_nav ul li span {
-  padding: 1px 0;
+/* line 448, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button:active, .button.link-block-styled:active, button.button:active, input.button:active,
+#respond input#submit:active, #content input.button:active {
+  top: 1px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav ul li.chosen a:before, .woocommerce .widget_layered_nav ul li.chosen .link-block-styled:before {
-  margin-right: .618em;
+/* line 450, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button.alt, .button.alt.link-block-styled, button.button.alt, input.button.alt,
+#respond input#submit.alt, #content input.button.alt {
+  background: #FDB813;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FDB813), to(#C18D0F));
+  background: -webkit-linear-gradient(#FDB813, #C18D0F);
+  background: -moz-linear-gradient(center top, #FDB813 0%, #C18D0F 100%);
+  background: -moz-gradient(center top, #FDB813 0%, #C18D0F 100%);
+  border-color: #AA7802;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav_filters ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  overflow: hidden;
-  zoom: 1;
+/* line 459, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+a.button.alt:hover, .button.alt.link-block-styled:hover, .link-block:hover .button.alt.link-block-styled, button.button.alt:hover, input.button.alt:hover,
+#respond input#submit.alt:hover, #content input.button.alt:hover {
+  background: #FDB813;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FDB813), to(#8A640B));
+  background: -webkit-linear-gradient(#FDB813, #8A640B);
+  background: -moz-linear-gradient(center top, #FDB813 0%, #8A640B 100%);
+  background: -moz-gradient(center top, #FDB813 0%, #8A640B 100%);
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav_filters ul li {
-  float: left;
-  padding: 0 1px 1px 0;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav_filters ul li a, .woocommerce .widget_layered_nav_filters ul li .link-block-styled {
-  text-decoration: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_layered_nav_filters ul li a:before, .woocommerce .widget_layered_nav_filters ul li .link-block-styled:before {
-  margin-right: .618em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .price_slider {
+/* line 468, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .price_slider {
   margin-bottom: 1em;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .price_slider_amount {
+/* line 469, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .price_slider_amount {
   text-align: right;
-  line-height: 2.4;
-  font-size: .8751em;
+  line-height: 2.4em;
+  font-size: 0.8751em;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .price_slider_amount .button {
+/* line 470, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .price_slider_amount .button {
   font-size: 1.15em;
+}
+
+/* line 471, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .price_slider_amount .button {
   float: left;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider {
+/* line 472, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider {
   position: relative;
   text-align: left;
-  margin-left: .5em;
-  margin-right: .5em;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+/* line 473, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
-  width: 1em;
-  height: 1em;
-  background-color: #a46497;
-  border-radius: 1em;
-  cursor: ew-resize;
-  outline: 0;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: .1em;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  background: #d3d3d3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#d3ced3));
+  background: -webkit-linear-gradient(#f7f6f7, #d3ced3);
+  background: -moz-linear-gradient(center top, #f7f6f7 0%, #d3ced3 100%);
+  background: -moz-gradient(center top, #f7f6f7 0%, #d3ced3 100%);
+  outline: none;
   top: -.3em;
-  margin-left: -.5em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.65);
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+/* line 486, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider .ui-slider-handle:last-child {
+  margin-left: -1em;
+}
+
+/* line 487, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
   font-size: .7em;
   display: block;
   border: 0;
+  background: #d3d3d3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#d3ced3));
+  background: -webkit-linear-gradient(#f7f6f7, #d3ced3);
+  background: -moz-linear-gradient(center top, #f7f6f7 0%, #d3ced3 100%);
+  background: -moz-gradient(center top, #f7f6f7 0%, #d3ced3 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
   border-radius: 1em;
-  background-color: #a46497;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+/* line 502, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .price_slider_wrapper .ui-widget-content {
   border-radius: 1em;
-  background-color: #602053;
-  border: 0;
+  background: #1e1e1e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#6a6a6a));
+  background: -webkit-linear-gradient(#1e1e1e, #6a6a6a);
+  background: -moz-linear-gradient(center top, #1e1e1e 0%, #6a6a6a 100%);
+  background: -moz-gradient(center top, #1e1e1e 0%, #6a6a6a 100%);
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider-horizontal {
+/* line 510, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider-horizontal {
   height: .5em;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range {
+/* line 511, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider-horizontal .ui-slider-range {
   top: 0;
   height: 100%;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range-min {
+/* line 512, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider-horizontal .ui-slider-range-min {
   left: -1px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range-max {
+/* line 513, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.widget_price_filter .ui-slider-horizontal .ui-slider-range-max {
   right: -1px;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account .addresses .title:after, .woocommerce-account .addresses .title:before {
-  content: " ";
-  display: table;
+/* line 516, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_message, .woocommerce_error, .woocommerce_info {
+  padding: 0.55em 1em 0.55em 3em;
+  margin: 0 0 2em;
+  position: relative;
+  border-radius: 2px;
+  background: #f7f6f7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#f0eef0));
+  background: -webkit-linear-gradient(#f7f6f7, #f0eef0);
+  background: -moz-linear-gradient(center top, #f7f6f7 0%, #f0eef0 100%);
+  background: -moz-gradient(center top, #f7f6f7 0%, #f0eef0 100%);
+  color: #5e5e5e;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 0 #ffffff;
+  list-style: none outside;
+  width: auto;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account .addresses .title h3 {
-  float: left;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account .addresses .title .edit, .woocommerce-account ul.digital-downloads li .count {
-  float: right;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account ol.commentlist.notes li.note p.meta {
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account ol.commentlist.notes li.note .description p:last-child {
-  margin-bottom: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account ul.digital-downloads {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account ul.digital-downloads li {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-account ul.digital-downloads li:before {
-  font-family: WooCommerce;
-  speak: none;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: .618em;
-  content: "";
-  text-decoration: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart table.cart .product-thumbnail {
-  min-width: 32px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart table.cart img {
-  width: 32px;
-  box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart table.cart td, .woocommerce-cart table.cart th {
-  vertical-align: middle;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart table.cart td.actions .coupon .input-text {
-  float: left;
-  box-sizing: border-box;
-  border: 1px solid #d3ced2;
-  padding: 6px 6px 5px;
-  margin: 0 4px 0 0;
-  outline: 0;
-  line-height: 1;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart table.cart input {
-  margin: 0;
-  vertical-align: middle;
-  line-height: 1;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .wc-proceed-to-checkout {
-  padding: 1em 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .wc-proceed-to-checkout:after, .woocommerce-cart .wc-proceed-to-checkout:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout .checkout-button.link-block-styled {
+/* line 534, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_message:after, .woocommerce_error:after, .woocommerce_info:after {
+  content: "";
   display: block;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .shipping_calculator .button {
-  width: 100%;
-  float: none;
-  display: block;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .shipping_calculator .shipping-calculator-button:after {
-  font-family: WooCommerce;
-  speak: none;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-left: .618em;
-  content: "";
-  text-decoration: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment ul.payment_methods li:after, .woocommerce-checkout #payment ul.payment_methods li:before, .woocommerce-checkout #payment ul.payment_methods:after, .woocommerce-checkout #payment ul.payment_methods:before {
-  content: " ";
-  display: table;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals p small {
-  color: #777;
-  font-size: .83em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals table {
-  border-collapse: separate;
-  margin: 0 0 6px;
-  padding: 0;
-  border-left: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals table tr:first-child td, .woocommerce-cart .cart-collaterals .cart_totals table tr:first-child th {
-  border-top: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals table th {
-  width: 25%;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals table td, .woocommerce-cart .cart-collaterals .cart_totals table th {
-  vertical-align: top;
-  border-left: 0;
-  border-right: 0;
-  padding: 6px 0;
-  line-height: 2em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals table small {
-  color: #777;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals table select {
-  width: 100%;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals .discount td {
-  color: #77a464;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cart_totals tr td, .woocommerce-cart .cart-collaterals .cart_totals tr th {
-  border-top: 1px solid #ebe9eb;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-cart .cart-collaterals .cross-sells ul.products li.product {
-  margin-top: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
-  float: left;
-  clear: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout .checkout .col-2 .form-row-first, .woocommerce-checkout .checkout .col-2 .notes {
-  clear: left;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout .checkout .create-account small {
-  font-size: 11px;
-  color: #777;
-  font-weight: 400;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout .checkout div.shipping-address {
-  padding: 0;
-  clear: left;
-  width: 100%;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.single-product .twentythirteen p.stars, .woocommerce-checkout #payment ul.payment_methods li:after, .woocommerce-checkout #payment ul.payment_methods:after, .woocommerce-checkout .checkout .shipping_address {
   clear: both;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment {
-  background: #ebe9eb;
-  border-radius: 5px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment ul.payment_methods {
-  text-align: left;
-  padding: 1em;
-  border-bottom: 1px solid #d3ced2;
-  margin: 0;
-  list-style: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment ul.payment_methods li {
-  line-height: 2;
-  text-align: left;
-  margin: 0;
-  font-weight: 400;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment ul.payment_methods li input {
-  margin: 0 1em 0 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment ul.payment_methods li img {
-  vertical-align: middle;
-  margin: -2px 0 0 0.5em;
-  padding: 0;
-  position: relative;
-  box-shadow: none;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment ul.payment_methods li img + img {
-  margin-left: 2px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.form-row {
-  padding: 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 1em;
-  margin: 1em 0;
-  font-size: .92em;
-  border-radius: 2px;
-  line-height: 1.5;
-  background-color: #dfdcde;
-  color: #515151;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box input.input-text, .woocommerce-checkout #payment div.payment_box textarea {
-  border-color: #bbb3b9 #c7c1c6 #c7c1c6;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box ::-webkit-input-placeholder {
-  color: #bbb3b9;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box :-moz-placeholder {
-  color: #bbb3b9;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box :-ms-input-placeholder {
-  color: #bbb3b9;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number {
-  font-size: 1.5em;
-  padding: 8px;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa {
-  background-image: url(../images/icons/credit-cards/visa.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard {
-  background-image: url(../images/icons/credit-cards/mastercard.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser {
-  background-image: url(../images/icons/credit-cards/laser.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub {
-  background-image: url(../images/icons/credit-cards/diners.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro {
-  background-image: url(../images/icons/credit-cards/maestro.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb {
-  background-image: url(../images/icons/credit-cards/jcb.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex {
-  background-image: url(../images/icons/credit-cards/amex.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover, .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover {
-  background-image: url(../images/icons/credit-cards/discover.png);
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box span.help {
-  font-size: .857em;
-  color: #777;
-  font-weight: 400;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box .form-row {
-  margin: 0 0 1em;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box p:last-child {
-  margin-bottom: 0;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment div.payment_box:before {
+/* line 539, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_message:before, .woocommerce_error:before, .woocommerce_info:before {
   content: "";
+  height: 16px;
+  width: 16px;
   display: block;
-  border: 1em solid #dfdcde;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-top-color: transparent;
   position: absolute;
-  top: -.75em;
-  left: 0;
-  margin: -1em 0 0 2em;
+  top: .8em;
+  left: 1em;
+  background-color: white;
+  border-radius: 1em;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment .payment_method_paypal .about_paypal {
+/* line 552, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_message .button, .woocommerce_error .button, .woocommerce_info .button {
   float: right;
-  line-height: 52px;
-  font-size: .83em;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.woocommerce-checkout #payment .payment_method_paypal img {
-  max-height: 52px;
-  vertical-align: middle;
+/* line 555, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_message li, .woocommerce_error li, .woocommerce_info li {
+  list-style: none outside;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-#content.twentyeleven .woocommerce-pagination a, #content.twentyeleven .woocommerce-pagination .link-block-styled {
-  font-size: 1em;
-  line-height: 1;
+/* line 558, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_message:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAYAAAAPDoR2AAAAN0lEQVQIHXWMQQ4AMAjCxv7/ZxZIanbYPIhSUbbXo2Jqf0BsA4mjgU1ioAVpSSrDVbPzFgPt7QH7qwoJ3MDCYgAAAABJRU5ErkJggg==) center no-repeat #8fae1b;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.single-product .twentythirteen #reply-title, .single-product .twentythirteen #respond #commentform, .single-product .twentythirteen .entry-summary {
-  padding: 0;
+/* line 561, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_info:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAG0lEQVQIHWP8DwQMQMACxIwwBliECcQDATgDAMHrBQqJ6tMZAAAAAElFTkSuQmCC) center no-repeat #18919c;
 }
 
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.twentythirteen .woocommerce-breadcrumb {
-  padding-top: 40px;
-}
-
-/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
-.twentyfourteen ul.products li.product {
-  margin-top: 0 !important;
+/* line 564, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_woocommerce.scss */
+.woocommerce_error:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAHUlEQVQIHWP8DwQMQMAEIkAAzmABchhBIiAGWA0Ar6MFCigWCYMAAAAASUVORK5CYII=) center no-repeat #b81c23;
 }
 
 /* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-wc/_wclayout.scss */
@@ -4577,19 +3114,14 @@ div.wpcf7 .placeheld {
   /* width: 25%; */
 }
 
-/* line 217, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
-#searchform .input-search {
-  width: 98%;
-}
-
 /* line 220, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
 .twitter-typeahead {
-  width: 95%;
+  width: 100%;
 }
 
 /* line 223, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
 .tt-dropdown-menu {
-  width: 102%;
+  width: 98%;
 }
 
 /* line 227, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
@@ -4712,7 +3244,7 @@ div.wpcf7 .placeheld {
 
 /* line 369, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
 .rslides_container {
-  margin-bottom: 50px;
+  margin-bottom: 2em;
   position: relative;
   float: left;
   width: 100%;
@@ -4802,6 +3334,124 @@ div.wpcf7 .placeheld {
   color: #fff;
 }
 
+/* HTML5 Number polyfill | Jonathan Stipe | https://github.com/jonstipe/number-polyfill*/
+/* line 538, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-container {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 545, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn {
+  box-sizing: border-box;
+  border-width: 2px;
+  border-color: #ededed #777777 #777777 #ededed;
+  border-style: solid;
+  background-color: #cccccc;
+  width: 1.2em;
+}
+
+/* line 554, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn:hover {
+  cursor: pointer;
+}
+
+/* line 556, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn:active {
+  border-width: 2px;
+  border-color: #5e5e5e #d8d8d8 #d8d8d8 #5e5e5e;
+  border-style: solid;
+  background-color: #999999;
+}
+
+/* line 562, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-up {
+  border-bottom-width: 1px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+/* line 567, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-up:before {
+  border-width: 0 0.3em 0.3em 0.3em;
+  border-color: transparent transparent black transparent;
+  top: 25%;
+}
+
+/* line 571, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-up:active {
+  border-bottom-width: 1px;
+}
+
+/* line 573, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-up:active:before {
+  border-bottom-color: white;
+  top: 26%;
+  left: 51%;
+}
+
+/* line 578, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-down {
+  border-top-width: 1px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+/* line 583, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-down:before {
+  border-width: 0.3em 0.3em 0 0.3em;
+  border-color: black transparent transparent transparent;
+  top: 75%;
+}
+
+/* line 587, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-down:active {
+  border-top-width: 1px;
+}
+
+/* line 589, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-down:active:before {
+  border-top-color: white;
+  top: 76%;
+  left: 51%;
+}
+
+/* line 595, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+div.number-spin-btn-up:before,
+div.number-spin-btn-down:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  left: 50%;
+  margin: -0.15em 0 0 -0.3em;
+  padding: 0;
+}
+
+/* line 605, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+input:disabled + div.number-spin-btn-container > div.number-spin-btn-up:active, input:disabled + div.number-spin-btn-container > div.number-spin-btn-down:active {
+  border-color: #ededed #777777 #777777 #ededed;
+  border-style: solid;
+  background-color: #cccccc;
+}
+
+/* line 609, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+input:disabled + div.number-spin-btn-container > div.number-spin-btn-up:before, input:disabled + div.number-spin-btn-container > div.number-spin-btn-up:active:before {
+  border-bottom-color: #999999;
+  top: 25%;
+  left: 50%;
+}
+
+/* line 613, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-plugins/_plugins.scss */
+input:disabled + div.number-spin-btn-container > div.number-spin-btn-down:before, input:disabled + div.number-spin-btn-container > div.number-spin-btn-down:active:before {
+  border-top-color: #999999;
+  top: 75%;
+  left: 50%;
+}
+
+/* Restyle the woocommerce gallery plugin css */
 /*
  * jQuery FlexSlider v1.8
  * http://flex.madebymufffin.com
@@ -5151,7 +3801,7 @@ html[xmlns] .slides {
 /* line 2, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
 .logo {
   position: relative;
-  width: 316px;
+  width: 488px;
   height: 92px;
   display: inline-block;
 }
@@ -5161,24 +3811,193 @@ html[xmlns] .slides {
   background: url("../img/fontaine_logo.jpg");
   position: absolute;
   width: 316px;
-  height: 92px;
+  height: 75px;
 }
 
-/* Logo - image replacement - http://www.goldenapplewebdesign.com/image-replacement/ */
-/* line 2, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
-.logo {
+@media (min-width: 60em) {
+  /* line 15, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
+  .logo span {
+    width: 488px;
+    height: 92px;
+  }
+}
+
+/* line 20, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
+.cart-container {
+  display: inline-block;
+  background: url(../img/cart.jpg) no-repeat right center;
+  width: 286px;
+  height: 60px;
   position: relative;
-  width: 316px;
-  height: 92px;
-  display: inline-block;
 }
 
-/* line 8, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
-.logo span {
-  background: url("../img/fontaine_logo.jpg");
+/* line 27, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
+.cart-contents {
   position: absolute;
-  width: 316px;
-  height: 92px;
+  line-height: 60px;
+  right: .5em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* line 35, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_header.scss */
+.cart-contents:before {
+  content: "your cart: ";
+}
+
+/* Footer */
+/* line 2, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.footer {
+  background-color: #fff;
+}
+
+/* line 5, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.footer-menus li a, .footer-menus li .link-block-styled {
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 10, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.footer-menus li a:hover, .footer-menus li .link-block-styled:hover, .footer-menus li .link-block:hover .link-block-styled, .link-block:hover .footer-menus li .link-block-styled {
+  color: #1f97b0;
+}
+
+/* line 13, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.footer-menus li a:before, .footer-menus li .link-block-styled:before {
+  content: '» ';
+}
+
+@media (min-width: 40em) {
+  /* line 18, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+  .footer-menus .grid-fifth {
+    border-right: 1px dashed #aaa;
+  }
+  /* line 21, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+  .footer-menus .grid-fifth:last-child {
+    border-right: none;
+  }
+}
+
+/* line 26, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.footer .showroom {
+  background-color: #fff;
+  text-align: center;
+  font-size: .8em;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+/* line 33, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.footer .showroom p {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #9b9389;
+}
+
+/* line 38, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.copyright {
+  margin-top: 2.5em;
+  padding-bottom: 2em;
+  font-size: .75em;
+}
+
+/* line 43, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.copyright .list-inline a, .copyright .list-inline .link-block-styled {
+  color: #333;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/* line 48, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.copyright .list-inline a:after, .copyright .list-inline .link-block-styled:after {
+  content: "|";
+  margin-left: 1em;
+}
+
+/* line 53, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+.copyright .list-inline li:last-child a:after, .copyright .list-inline li:last-child .link-block-styled:after {
+  content: "";
+}
+
+@media (min-width: 40em) {
+  /* line 58, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+  .footer {
+    background-image: url("../img/footer_bg.jpg");
+    background-repeat: repeat-x;
+    background-position: top left;
+    margin-left: -1.4%;
+    margin-right: -1.4%;
+  }
+  /* line 65, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+  .footer .row {
+    background-color: transparent;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 72, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+  .footer-menus ul, .footer-menus h3 {
+    padding-left: 1em;
+    margin-bottom: 0;
+  }
+  /* line 76, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_footer.scss */
+  .footer .copyright .grid-two-thirds {
+    text-align: right;
+  }
+}
+
+/* line 1, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+.rslides_container {
+  margin-top: 1em;
+}
+
+/* line 5, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+#featured_section h3, #sliderheading {
+  font-size: 0.875em;
+  text-align: center;
+  color: #fff;
+  background-color: #1f97b0;
+  padding: 0;
+  padding: 0.5em 1em;
+  vertical-align: middle;
+}
+
+/* line 14, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+#sliderheading {
+  margin-bottom: 1em;
+  margin-top: 0;
+  clear: both;
+}
+
+/* line 24, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+#featured_section .grid-third div {
+  background-color: #eee;
+  position: relative;
+  height: auto;
+}
+
+/* line 34, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+#featured_section .grid-third h3 {
+  margin-bottom: .125em;
+}
+
+/* line 37, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+#featured_section .grid-third p {
+  padding: 1em;
+}
+
+/* line 41, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_homepage.scss */
+#featured_section .grid-third .find-out-more {
+  position: absolute;
+  color: #fdb813;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  width: 10em;
+  height: 1em;
 }
 
 /* Buttons */
@@ -5187,15 +4006,20 @@ html[xmlns] .slides {
   cursor: pointer;
 }
 
+/* line 7, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+#menuToggle {
+  display: inline-block;
+}
+
 /* Assistive text */
-/* line 11, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 13, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .assistive-text,
 .site .screen-reader-text {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 15, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 17, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation .assistive-text:focus {
   background: #fff;
   border: 2px solid #333;
@@ -5211,14 +4035,14 @@ html[xmlns] .slides {
   /* Above WP toolbar */
 }
 
-/* line 29, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 31, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .ad-gallery .ad-image-wrapper {
   z-index: 1 !important;
   opacity: .99;
 }
 
 /* Navigation Menu */
-/* line 35, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 37, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation ul, main-navigation li {
   list-style-type: none;
   display: block;
@@ -5227,64 +4051,66 @@ html[xmlns] .slides {
   font-size: 1em;
 }
 
-/* line 42, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 44, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation {
   background: #38bebd;
   color: #165f72;
   z-index: 10 !important;
   position: relative;
-  line-height: 2;
+  line-height: 2.5;
 }
 
-/* line 49, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 51, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation li {
   border-bottom: 1px solid #165f72;
 }
 
-/* line 53, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 54, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation a, .main-navigation .link-block-styled {
   color: #165f72;
   font-size: 1em;
   line-height: 1.5;
   text-decoration: none;
   display: block;
+  text-align: left;
+  width: 100%;
 }
 
-/* line 60, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 63, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .nav-menu > li > a, .nav-menu > li > .link-block-styled {
   color: white;
-  line-height: 2;
+  line-height: 2.5;
 }
 
-/* line 64, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 67, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .nav-menu > li:hover > a, .nav-menu > li:hover > .link-block-styled {
   background-color: #249fb7;
   line-height: 2;
 }
 
-/* line 68, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 71, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation a:hover, .main-navigation .link-block-styled:hover, .main-navigation .link-block:hover .link-block-styled, .link-block:hover .main-navigation .link-block-styled {
   color: #21759b;
 }
 
-/* line 72, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 75, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation ul.nav-menu,
 .main-navigation div.nav-menu > ul {
   display: none;
 }
 
-/* line 76, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 79, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation ul.nav-menu.toggled-on,
 .menu-toggle {
   display: inline-block;
 }
 
-/* line 79, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 82, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation li ul {
   display: none;
 }
 
-/* line 82, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+/* line 85, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
@@ -5292,13 +4118,13 @@ html[xmlns] .slides {
 /* =Media queries
 -------------------------------------------------------------- */
 /* Minimum width of 40em. */
-@media screen and (min-width: 40em) {
-  /* line 91, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+@media (min-width: 40em) {
+  /* line 94, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-header .row {
     margin-left: -1.4%;
     margin-right: -1.4%;
   }
-  /* line 95, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 98, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .nav-wrap {
     border-top: 1px solid #38bebd;
     padding-top: 2px;
@@ -5307,7 +4133,7 @@ html[xmlns] .slides {
     margin-left: -2.8%;
     margin-right: -2.8%;
   }
-  /* line 103, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 106, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation {
     padding-left: 1.4%;
     padding-right: 1.4%;
@@ -5317,26 +4143,26 @@ html[xmlns] .slides {
     background: linear-gradient(to bottom, #38bebd 0%, #38bebd 30%, #38bebd 80%, #165f70 99%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38bebd', endColorstr='#165f70',GradientType=0 );
   }
-  /* line 117, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 120, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
     text-align: left;
     width: 100%;
   }
-  /* line 122, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 125, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation ul {
     margin: 0;
     text-indent: 0;
   }
-  /* line 127, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 130, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li a,
   .main-navigation li .link-block-styled,
   .main-navigation li {
     display: inline-block;
     text-decoration: none;
   }
-  /* line 131, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 134, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li a, .main-navigation li .link-block-styled {
     border-bottom: 0;
     color: #6a6a6a;
@@ -5345,33 +4171,33 @@ html[xmlns] .slides {
     white-space: nowrap;
     color: #fff;
   }
-  /* line 139, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 142, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .nav-menu > li {
     border-bottom: none;
   }
-  /* line 142, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 145, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .nav-menu > li > a, .nav-menu > li > .link-block-styled {
     color: white;
     line-height: 2;
     padding: 0 0.5em;
   }
-  /* line 147, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 150, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .nav-menu > li > a:hover, .nav-menu > li > .link-block-styled:hover, .link-block:hover .nav-menu > li > .link-block-styled {
     color: #000;
     border-radius: 1em;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  /* line 153, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 156, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li a:hover, .main-navigation li .link-block-styled:hover, .main-navigation li .link-block:hover .link-block-styled, .link-block:hover .main-navigation li .link-block-styled {
     color: #000;
   }
-  /* line 156, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 159, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li {
     margin: 0 0.5em 0 0;
     position: relative;
   }
-  /* line 160, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 163, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li ul {
     display: none;
     margin: 0;
@@ -5380,17 +4206,17 @@ html[xmlns] .slides {
     top: 100%;
     z-index: 1;
   }
-  /* line 168, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 171, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li ul ul {
     top: 0;
     left: 100%;
   }
-  /* line 172, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 175, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation ul li:hover > ul {
     border-left: 0;
     display: block;
   }
-  /* line 176, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 179, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li ul li a, .main-navigation li ul li .link-block-styled {
     background: #249fb7;
     border-bottom: 1px solid #ededed;
@@ -5405,12 +4231,12 @@ html[xmlns] .slides {
     white-space: normal;
     z-index: 1;
   }
-  /* line 190, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 193, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation li ul li a:hover, .main-navigation li ul li .link-block-styled:hover, .main-navigation li ul li .link-block:hover .link-block-styled, .link-block:hover .main-navigation li ul li .link-block-styled {
     background: #e3e3e3;
     color: #444;
   }
-  /* line 197, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 200, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .main-navigation .current-menu-item > a,
   .main-navigation .current-menu-item > .link-block-styled,
   .main-navigation .current-menu-ancestor > a,
@@ -5421,90 +4247,64 @@ html[xmlns] .slides {
     color: #636363;
     font-weight: bold;
   }
-  /* line 201, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  /* line 204, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
   .menu-toggle {
     display: none;
   }
 }
 
-/* Footer */
-/* line 2, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-.footer-menus li a, .footer-menus li .link-block-styled {
-  font-size: .8em;
-  color: #333;
-  text-decoration: none;
+/* line 208, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+.mobilemenu {
+  height: 2.75em;
+  line-height: 2.75em;
+  background: #38bebd;
 }
 
-/* line 7, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-.footer-menus li a:before, .footer-menus li .link-block-styled:before {
-  content: '» ';
+/* line 222, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+#toggleMenu, #loginButton {
+  width: 18%;
+  background: transparent;
+  border: none;
+  vertical-align: middle;
+  margin-top: .25em;
 }
 
-@media (min-width: 40em) {
-  /* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-  .footer-menus .grid-fifth {
-    border-right: 1px dashed #aaa;
-  }
-  /* line 15, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-  .footer-menus .grid-fifth:last-child {
-    border-right: none;
-  }
-}
-
-/* line 20, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-.footer .showroom {
-  background-color: #fff;
-  text-align: center;
-  font-size: .8em;
-  margin-top: 1em;
-  padding: 1em;
-}
-
-/* line 27, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-.footer .showroom p {
+/* line 229, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+#searchform {
+  width: 62%;
   margin-bottom: 0;
-  font-weight: bold;
-  color: #9b9389;
+  position: relative;
 }
 
-/* line 32, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-.copyright {
-  margin-top: 1em;
-  padding-bottom: 2em;
-  font-size: .75em;
+/* line 234, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+#searchform .btn-search {
+  position: absolute;
+  right: 1em;
+  top: -.125em;
+  height: 2.5em;
 }
 
-/* line 37, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-.copyright a, .copyright .link-block-styled {
-  color: #333;
-  text-decoration: none;
+/* line 240, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+#toggleMenu, #searchform, #loginButton {
+  float: left;
 }
 
 @media (min-width: 40em) {
-  /* line 42, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-  .footer {
-    background-image: url("../../img/footer_bg.jpg");
-    background-repeat: repeat-x;
-    background-position: top left;
-    margin-left: -1.4%;
-    margin-right: -1.4%;
+  /* line 250, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  #toggleMenu, #searchform, #loginButton {
+    float: right;
   }
-  /* line 49, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-  .footer .row {
-    background-color: transparent;
-    padding-left: 1.4%;
-    padding-right: 1.4%;
-    margin-left: 0;
-    margin-right: 0;
+  /* line 253, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  .mobilemenu {
+    background: none;
   }
-  /* line 56, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-  .footer-menus ul, .footer-menus h3 {
-    padding-left: 1em;
-    margin-bottom: 0;
+  /* line 256, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  #searchform {
+    width: 100%;
   }
-  /* line 59, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-footer.scss */
-  footer .copyright .grid-two-thirds {
-    text-align: right;
+  /* line 259, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-main.scss */
+  .input-search {
+    border-radius: 1.3125em;
   }
 }
 
@@ -5521,68 +4321,73 @@ html[xmlns] .slides {
 }
 
 /* line 9, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+#social-menu .close {
+  color: red;
+}
+
+/* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu .collapse a, #social-menu .collapse .link-block-styled {
   line-height: 16px;
 }
 
-/* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 15, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu .collapse svg {
   margin-right: .5em;
 }
 
-/* line 16, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 19, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu svg {
   width: 42px;
   height: 42px;
   vertical-align: middle;
 }
 
-/* line 21, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 24, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #social-menu .icon-square {
   background-color: #e5e5e5;
   padding: 2px;
   border-radius: 3px;
 }
 
-/* line 26, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 29, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #socialmodal ul li {
   margin-bottom: .5em;
 }
 
-/* line 29, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+/* line 32, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
 #socialmodal ul li a, #socialmodal ul li .link-block-styled {
   font-size: 1.5em;
   line-height: 42px;
 }
 
 @media (min-width: 40em) {
-  /* line 35, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 38, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #social {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 39, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 42, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #social-menu {
     float: right;
     margin-top: .5em;
     margin-bottom: -.4em;
   }
-  /* line 44, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 47, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #social-menu svg {
     width: 21px;
     height: 21px;
   }
-  /* line 48, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 51, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #socialmodal ul li a, #socialmodal ul li .link-block-styled {
     font-size: 1em;
     line-height: 21px;
   }
-  /* line 52, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 55, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   .cart-container {
     float: right;
     clear: both;
   }
-  /* line 56, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
+  /* line 59, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_nav-social.scss */
   #social.row {
     border-left: 0;
     border-right: 0;
@@ -5600,81 +4405,123 @@ Version: 1.0
 Theme Name: fontaine
 Theme URI: https://github.com/cferdinandi/keel
 */
-/* line 11, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-body {
-  background: #f1f1f1 url(../img/bg_gplay.png) repeat top left;
+@media (min-width: 40em) {
+  /* line 12, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  body {
+    background: #f1f1f1 url(../img/bg_gplay.png) repeat top left;
+  }
 }
 
-/* line 14, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* https://css-tricks.com/snippets/wordpress/remove-the-28px-push-down-from-the-admin-bar/#comment-1596226 */
+/* line 17, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+body.admin-bar {
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  /* line 21, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  body.admin-bar {
+    padding-top: 32px;
+  }
+}
+
+/* line 26, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .container > .row, .container > .main-header > .row, .container > .footer > .row {
   border-left: 4px solid #E4E4E4;
   border-right: 4px solid #E4E4E4;
 }
 
-/* line 18, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 30, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .row {
   background: #ffffff;
 }
 
-/* line 21, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 33, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .clear:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* line 38, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #165f72;
+}
+
+/* line 42, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.more-link:hover {
+  cursor: pointer;
+}
+
+/* line 45, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.more-content {
+  padding-bottom: .5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #eee;
+}
+
 /* The input spinner is not visible until you hover - make it always visible */
-/* line 28, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 53, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
-/* line 31, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 57, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.woocommerce div.product form.cart div.quantity {
+  margin-right: 1em;
+}
+
+/* line 60, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.woocommerce div.quantity input[type=number] {
+  border-right: 1px solid #ccc;
+}
+
+/* line 65, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 input[type=number] {
   max-width: 100px;
 }
 
-/* line 34, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 68, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .variations select {
   max-width: 250px;
 }
 
 @media (max-width: 40em) {
-  /* line 38, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 72, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .mobile {
     display: block;
   }
-  /* line 41, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 75, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .desktop {
     display: none;
   }
 }
 
 @media (min-width: 40em) {
-  /* line 47, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 81, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .mobile {
     display: none;
   }
-  /* line 50, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 84, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .desktop {
     display: block;
   }
 }
 
-/* line 56, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 90, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .list-inline-compact li {
   margin-right: 0;
   padding-right: 0;
 }
 
-/* line 61, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 95, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 ul.products {
   margin-left: -1.4%;
   margin-right: -1.4%;
 }
 
-/* line 66, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 100, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 ul.products,
 ul.products li {
   list-style: none;
@@ -5682,7 +4529,7 @@ ul.products li {
   margin: 0;
 }
 
-/* line 71, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 105, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 ul.products li.product {
   float: left;
   padding-left: 1.4%;
@@ -5692,44 +4539,21 @@ ul.products li.product {
 }
 
 @media (min-width: 30em) {
-  /* line 80, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 114, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   ul.products li.product {
     width: 50%;
   }
 }
 
 @media (min-width: 60em) {
-  /* line 86, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 120, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   ul.products li.product {
     width: 33.3333%;
   }
 }
 
-/* line 91, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.cart-container {
-  display: inline-block;
-  background: url(../img/cart.jpg) no-repeat right center;
-  width: 286px;
-  height: 60px;
-  position: relative;
-}
-
-/* line 98, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.cart-contents {
-  position: absolute;
-  line-height: 60px;
-  right: .5em;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* line 106, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.cart-contents:before {
-  content: "your cart: ";
-}
-
 /* Styles from old site */
-/* line 111, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 126, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .breadcrumb {
   list-style: none;
   overflow: hidden;
@@ -5739,7 +4563,7 @@ ul.products li.product {
   background: #e6e7e8;
 }
 
-/* line 119, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 134, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .breadcrumb li {
   float: left;
   padding: 0.21em 2em 0.21em 1em;
@@ -5751,32 +4575,27 @@ ul.products li.product {
   color: #777777;
 }
 
-/* line 132, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 147, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .breadcrumb li:last-child {
   background-image: none;
 }
 
-/* line 135, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 150, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .breadcrumb li a, .breadcrumb li .link-block-styled {
   color: #135F73;
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 140, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 155, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .breadcrumb li a:hover, .breadcrumb li .link-block-styled:hover, .breadcrumb li .link-block:hover .link-block-styled, .link-block:hover .breadcrumb li .link-block-styled {
   color: #37BFBD;
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 146, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-#menuToggle {
-  display: inline-block;
-}
-
 /* Styles for the News Archive - blog */
-/* line 151, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 162, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .blog article {
   border-bottom: 1px solid #eee;
   padding-bottom: 0;
@@ -5784,33 +4603,33 @@ ul.products li.product {
   margin-top: 1.5em;
 }
 
-/* line 157, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 168, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .blog article h1 {
   margin: 0;
   padding: 0 0 0.5em 0;
   font-size: 1.1em;
 }
 
-/* line 162, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 173, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .blog article figure {
   width: 125px;
   float: left;
   margin: 0 1em 2em 0;
 }
 
-/* line 167, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 178, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .blog article figure img {
   border-radius: 1em;
 }
 
-/* line 170, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 181, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .blog article p {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 /* Style the contact form 7 */
-/* line 176, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 187, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .wpcf7-submit {
   background-color: #249fb7;
   border: 1px solid #249fb7;
@@ -5826,16 +4645,16 @@ ul.products li.product {
 }
 
 @media (min-width: 40em) {
-  /* line 190, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 201, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .wpcf7-submit {
     max-width: 10em;
   }
-  /* line 193, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 204, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .wpcf7-form .input1 {
     display: inline-block;
     width: 200px;
   }
-  /* line 197, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 208, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .wpcf7-form .wpcf7-form-control-wrap {
     display: inline-block;
   }
@@ -5843,7 +4662,7 @@ ul.products li.product {
 
 /* Gallery styles */
 @media screen and (min-width: 65em) {
-  /* line 204, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 215, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .gallery_container {
     width: 400px;
     float: right;
@@ -5852,19 +4671,19 @@ ul.products li.product {
   }
 }
 
-/* line 213, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 224, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .price .amount {
   color: #38bebd;
   font-weight: bold;
 }
 
-/* line 218, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 229, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .single-product .product_meta .posted_in,
 .single-product .product_meta .tagged_as {
   display: none;
 }
 
-/* line 221, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 232, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .stock.out-of-stock {
   background-color: #feebbb;
   border: 1px solid #fdb813;
@@ -5872,25 +4691,25 @@ ul.products li.product {
   padding: 0.5em 1em;
 }
 
-/* line 228, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 239, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .widget_price_filter {
   position: relative;
   opacity: .99;
 }
 
-/* line 234, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 245, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce aside.widget_product_categories ul.product-categories > li:not(.current-cat) {
   display: none;
 }
 
 @media (min-width: 40em) {
-  /* line 238, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 249, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   #s {
     width: 100%;
   }
 }
 
-/* line 243, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 254, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message {
   padding: 1em 2em 1em 3.5em !important;
   margin: 0 0 2em !important;
@@ -5903,67 +4722,78 @@ ul.products li.product {
   word-wrap: break-word;
 }
 
-/* line 254, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 265, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-error:after, .woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:after, .woocommerce .woocommerce-info:before, .woocommerce .woocommerce-message:after, .woocommerce .woocommerce-message:before {
   content: " ";
   display: table;
 }
 
-/* line 258, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 269, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:before, .woocommerce .woocommerce-message:before {
-  font-family: WooCommerce;
-  content: "\e028";
   display: inline-block;
   position: absolute;
   top: 1em;
   left: 1.5em;
 }
 
-/* line 266, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 275, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button {
   float: right;
 }
 
-/* line 269, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 278, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-error li, .woocommerce .woocommerce-info li, .woocommerce .woocommerce-message li {
   list-style: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
 
-/* line 274, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 283, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-message {
   border-top-color: #8fae1b;
 }
 
-/* line 277, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.woocommerce .woocommerce-message:before {
-  content: "\e015";
-  color: #8fae1b;
-}
-
-/* line 281, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 286, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-info {
   border-top-color: #1e85be;
 }
 
-/* line 284, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.woocommerce .woocommerce-info:before {
-  color: #1e85be;
-}
-
-/* line 287, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 289, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce .woocommerce-error {
   border-top-color: #b81c23;
 }
 
-/* line 290, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.woocommerce .woocommerce-error:before {
-  content: "\e016";
-  color: #b81c23;
+/* line 292, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.woocommerce .woocommerce-message:before {
+  content: '\!';
+  background-color: #8fae1b;
 }
 
-/* line 294, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 296, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.woocommerce .woocommerce-info:before {
+  content: '\i';
+  background-color: #1e85be;
+}
+
+/* line 300, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.woocommerce .woocommerce-error:before {
+  content: '\X';
+  background-color: #b81c23;
+}
+
+/* line 306, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.woocommerce .woocommerce-message:before,
+.woocommerce .woocommerce-info:before,
+.woocommerce .woocommerce-error:before {
+  color: #fff;
+  padding: 0.25em 0.5em;
+  font-size: 1em;
+  line-height: 1;
+  font-family: Georgis, serif;
+  border-radius: 50%;
+}
+
+/* line 314, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .woocommerce small.note {
   display: block;
   color: #777;
@@ -5971,173 +4801,60 @@ ul.products li.product {
   margin-top: 10px;
 }
 
-/* line 301, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 321, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .summary.entry-summary:after, .products:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 307, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 327, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .variations_form {
   float: left;
 }
 
-/* Footer */
-/* line 310, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.footer {
-  background-color: #fff;
-}
-
-/* line 313, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.footer-menus li a, .footer-menus li .link-block-styled {
-  font-size: .8em;
-  color: #333;
-  text-decoration: none;
-}
-
-/* line 318, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.footer-menus li a:before, .footer-menus li .link-block-styled:before {
-  content: '» ';
-}
-
-@media (min-width: 40em) {
-  /* line 323, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-  .footer-menus .grid-fifth {
-    border-right: 1px dashed #aaa;
-  }
-  /* line 326, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-  .footer-menus .grid-fifth:last-child {
-    border-right: none;
-  }
-}
-
-/* line 331, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.footer .showroom {
-  background-color: #fff;
-  text-align: center;
-  font-size: .8em;
-  margin-top: 1em;
-  padding: 1em;
-}
-
-/* line 338, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.footer .showroom p {
-  margin-bottom: 0;
-  font-weight: bold;
-  color: #9b9389;
-}
-
-/* line 343, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.copyright {
-  margin-top: 1em;
-  padding-bottom: 2em;
-  font-size: .75em;
-}
-
-/* line 348, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.copyright a, .copyright .link-block-styled {
-  color: #333;
-  text-decoration: none;
-}
-
-@media (min-width: 40em) {
-  /* line 353, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-  .footer {
-    background-image: url("../img/footer_bg.jpg");
-    background-repeat: repeat-x;
-    background-position: top left;
-    margin-left: -1.4%;
-    margin-right: -1.4%;
-  }
-  /* line 360, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-  .footer .row {
-    background-color: transparent;
-    padding-left: 1.4%;
-    padding-right: 1.4%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  /* line 367, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-  .footer-menus ul, .footer-menus h3 {
-    padding-left: 1em;
-    margin-bottom: 0;
-  }
-  /* line 371, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-  .footer .copyright .grid-two-thirds {
-    text-align: right;
-  }
-}
-
-/* line 376, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-.mobilemenu {
-  height: 2.5em;
-  line-height: 2.5em;
-  background: #38bebd;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #38bebd), color-stop(30%, #38bebd), color-stop(80%, #38bebd), color-stop(99%, #165f70));
-  background: -webkit-linear-gradient(top, #38bebd 0%, #38bebd 30%, #38bebd 80%, #165f70 99%);
-  background: linear-gradient(to bottom, #38bebd 0%, #38bebd 30%, #38bebd 80%, #165f70 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38bebd', endColorstr='#165f70',GradientType=0 );
-}
-
-/* line 389, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-#toggleMenu, #searchform, #loginButton {
-  float: left;
-}
-
-/* line 392, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-#toggleMenu, #loginButton {
-  width: 18%;
-}
-
-/* line 395, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
-#searchform {
-  width: 60%;
-  margin-bottom: 0;
-}
-
 /* Products display */
-/* line 401, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 332, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .products a, .products .link-block-styled {
   text-decoration: none;
   color: #666;
 }
 
-/* line 405, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 336, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .products h3 {
   font-size: small;
   color: #666;
 }
 
 /* Sale Page */
-/* line 410, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 341, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .page-id-92 .onsale {
   display: none;
 }
 
 /* Homepage Mobile products */
-/* line 414, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 345, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .mobile-only .grid-half {
   margin-bottom: 1em;
 }
 
-/* line 417, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 348, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .mobile-only .rslides_nav {
   display: none;
 }
 
-/* line 420, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 351, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .mobile-only a:hover, .mobile-only .link-block-styled:hover, .mobile-only .link-block:hover .link-block-styled, .link-block:hover .mobile-only .link-block-styled {
   color: #165f72;
   text-decoration: none;
 }
 
-/* line 424, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 355, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .mobile-only img {
   padding-bottom: .25em;
 }
 
-/* line 427, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+/* line 358, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
 .mobile-only .price {
   display: block;
   font-size: 1.25em;
@@ -6148,7 +4865,7 @@ ul.products li.product {
 }
 
 @media (min-width: 30em) {
-  /* line 436, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 367, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .mobile-only .grid-half {
     margin-bottom: none;
     width: 50%;
@@ -6156,7 +4873,7 @@ ul.products li.product {
 }
 
 @media (min-width: 60em) {
-  /* line 442, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 373, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .mobile-only {
     display: none;
   }
@@ -6164,19 +4881,138 @@ ul.products li.product {
 
 /* Social Menu */
 @media (min-width: 40em) {
-  /* line 451, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 382, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .container {
     position: relative;
   }
-  /* line 452, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 383, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   #social {
     position: absolute;
     top: 0;
     right: 0;
     width: 500px;
   }
-  /* line 453, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+  /* line 384, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
   .cart-container {
     margin-top: 1.5em;
   }
+}
+
+/* Tabs */
+/* line 388, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs {
+  list-style: none;
+  padding: 0 0 0 1em;
+  margin: 0 0 1em;
+  /*margin:0 0 1.618em;*/
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 396, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li {
+  border: 1px solid #dfdbdf;
+  background: #f7f6f7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#dfdbdf));
+  background: -webkit-linear-gradient(#f7f6f7, #dfdbdf);
+  background: -moz-linear-gradient(center top, #f7f6f7 0%, #dfdbdf 100%);
+  background: -moz-gradient(center top, #f7f6f7 0%, #dfdbdf 100%);
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  margin: 0 -5px;
+  padding: 0 1em;
+}
+
+/* line 416, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li a, .wc-tabs li .link-block-styled {
+  display: inline-block;
+  padding: .5em 0;
+  font-weight: bold;
+  color: #5e5e5e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* line 424, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li a:hover, .wc-tabs li .link-block-styled:hover, .wc-tabs li .link-block:hover .link-block-styled, .link-block:hover .wc-tabs li .link-block-styled {
+  text-decoration: none;
+  color: #777777;
+}
+
+/* line 428, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li.active {
+  background: #ffffff;
+  z-index: 2;
+  border-bottom-color: #ffffff;
+}
+
+/* line 433, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li.active a, .wc-tabs li.active .link-block-styled {
+  color: inherit;
+  text-shadow: inherit;
+}
+
+/* line 437, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li.active:before {
+  box-shadow: 2px 2px 0 #ffffff;
+}
+
+/* line 440, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li.active:after {
+  box-shadow: -2px 2px 0 #ffffff;
+}
+
+/* line 443, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li:after, .wc-tabs li:before {
+  border: 1px solid #dfdbdf;
+  position: absolute;
+  bottom: -1px;
+  width: 5px;
+  height: 5px;
+  content: " ";
+}
+
+/* line 451, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li:before {
+  left: -6px;
+  -mox-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-width: 0 1px 1px 0;
+  box-shadow: 2px 2px 0 #dfdbdf;
+}
+
+/* line 459, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs li:after {
+  right: -6px;
+  -mox-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-width: 0 0 1px 1px;
+  box-shadow: -2px 2px 0 #dfdbdf;
+}
+
+/* line 467, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #dfdbdf;
+  z-index: 1;
+}
+
+/* line 476, /Users/anu/Desktop/Sites/fontainewp/wp-content/themes/fontaine/src/sass/components-fontaine/_fontaine.scss */
+.wc-tabs .panel {
+  margin: 0 0 2em;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }

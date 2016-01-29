@@ -20,12 +20,10 @@ get_header(); ?>
 		<li><?php _e( 'An out-of-date link.', 'keel' ) ?></li>
 	</ol>
 
-	<?php
-		// Insert the search form
-		get_search_form();
-	?>
-
+	<p>
+		Go to the <a href="<?php echo get_home_url(); ?>/sitemap">sitemap</a>.
+	</p>
+	<?php get_search_form(); ?>
 </article>
-
 
 <?php get_footer(); ?>

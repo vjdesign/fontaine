@@ -30,6 +30,7 @@
           <li><a target="_blank" title="Share this page" href="http://www.sharethis.com/share?url=<?php echo get_permalink(); ?>&title=<?php echo the_title(); ?>&img=<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>&summary=<?php bloginfo('description'); ?>&pageInfo=%7B%22hostname%22%3A%22<?php echo get_home_url(); ?>/%22%2C%22publisher%22%3A%22ra-4f9e1dfe1a947ba2%22%7D">
             <svg class="icon icon-square" style="background-color: #444444;"><use xlink:href="#icon-plus" fill="#ffffff"></use></svg> More... via ShareThis</a></li>
         </ul>
+        <a class="close" data-modal-close>x</a>
     </div>
   </li>
 </ul>

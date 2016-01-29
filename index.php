@@ -6,8 +6,6 @@
  */
 
 get_header(); ?>
-
-
 <?php if (have_posts()) : ?>
 
 	<?php woocommerce_breadcrumb(); ?>
@@ -16,24 +14,24 @@ get_header(); ?>
 		// Start the loop
 		while (have_posts()) : the_post();
 	?>
-	
+
 		<?php
 			// Insert the post content
-			get_template_part( 'content', 'Post Content' );
+			get_template_part( 'inc/content', 'Post Content' );
 		?>
 	<?php endwhile; ?>
 
 
 	<?php
 		// Previous/next page navigation
-		get_template_part( 'nav-page', 'Page Navigation' );
+		get_template_part( 'inc/nav-page', 'Page Navigation' );
 	?>
 
 
 <?php else : ?>
 	<?php
 		// If no content, include the "No post found" template
-		get_template_part( 'no-posts', 'No Posts Template' );
+		get_template_part( 'inc/no-posts', 'No Posts Template' );
 	?>
 <?php endif; ?>
 

@@ -15,14 +15,8 @@ get_header(); ?>
 		// Start the loop
 		while (have_posts()) : the_post();
 
-		// check if the post has a Post Thumbnail assigned to it.
-		if ( has_post_thumbnail() ) { ?>
-			<figure><?php the_post_thumbnail('large'); ?></figure>
-		<?php } ?>
-
-		<?php
 			// Insert the post content
-			get_template_part( 'content', 'Post Content' );
+			get_template_part( 'inc/content', 'Post Content' );
 		?>
 	<?php endwhile; ?>
 

@@ -19,13 +19,13 @@ get_header(); ?>
 	?>
 		<?php
 			// Insert the post content
-			get_template_part( 'content', 'Post Content' );
+			get_template_part( 'inc/content', 'Post Content' );
 		?>
 	<?php endwhile; ?>
 
 
 	<!-- Previous/Next page navigation -->
-	<?php get_template_part( 'nav-page', 'Page Navigation' ); ?>
+	<?php get_template_part( 'inc/nav-page', 'Page Navigation' ); ?>
 
 
 <?php

@@ -4,7 +4,9 @@
 .menu-toggle {
 cursor: pointer;
 }
-
+#menuToggle {
+	display: inline-block;
+}
 
 /* Assistive text */
 .assistive-text,
@@ -44,10 +46,9 @@ cursor: pointer;
   color: #165f72;
   z-index: 10!important;
   position: relative;
-  line-height: 2;
+  line-height: 2.5;
 }
 .main-navigation li {
-
   border-bottom: 1px solid #165f72;
 }
 .main-navigation a {
@@ -56,10 +57,12 @@ cursor: pointer;
   line-height: 1.5;
   text-decoration: none;
   display: block;
+	text-align: left;
+	width: 100%;
 }
 .nav-menu>li>a {
   color: white;
-  line-height: 2;
+  line-height: 2.5;
 }
 .nav-menu>li:hover>a {
   background-color: #249fb7;
@@ -87,7 +90,7 @@ cursor: pointer;
 -------------------------------------------------------------- */
 
 /* Minimum width of 40em. */
-@media screen and (min-width: 40em) {
+@media (min-width: $bp-medium) {
   .main-header .row {
     margin-left: -1.4%;
     margin-right: -1.4%;
@@ -201,4 +204,59 @@ cursor: pointer;
   .menu-toggle {
     display: none;
   }
+}
+.mobilemenu {
+	height: 2.75em;
+	line-height: 2.75em;
+	background: #38bebd;
+	// background: -moz-linear-gradient(top,  #38bebd 0%, #38bebd 30%, #38bebd 80%, #165f70 99%);
+	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38bebd), color-stop(30%,#38bebd), color-stop(80%,#38bebd), color-stop(99%,#165f70));
+	// background: -webkit-linear-gradient(top,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+	// background: -o-linear-gradient(top,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+	// background: -ms-linear-gradient(top,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+	// background: linear-gradient(to bottom,  #38bebd 0%,#38bebd 30%,#38bebd 80%,#165f70 99%);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38bebd', endColorstr='#165f70',GradientType=0 );
+}
+
+
+#toggleMenu, #loginButton {
+	width: 18%;
+	background: transparent;
+	border: none;
+	vertical-align: middle;
+	margin-top: .25em;
+}
+#searchform {
+	width: 62%;
+	margin-bottom: 0;
+	position: relative;
+}
+#searchform .btn-search {
+	position: absolute;
+	right: 1em;
+	top: -.125em;
+	height: 2.5em;
+}
+#toggleMenu, #searchform, #loginButton {
+	float:left;
+}
+@media (max-width: $bp-medium) {
+	#searchform {
+
+	}
+
+}
+@media (min-width: $bp-medium) {
+	#toggleMenu, #searchform, #loginButton {
+		float:right;
+	}
+	.mobilemenu {
+		background: none;
+	}
+	#searchform {
+		width: 100%;
+	}
+	.input-search {
+		border-radius: calc-em(21px);
+	}
 }

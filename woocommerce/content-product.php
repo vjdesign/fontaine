@@ -22,7 +22,7 @@ if ( empty( $woocommerce_loop['loop'] ) ) {
 
 // Store column count for displaying the grid
 if ( empty( $woocommerce_loop['columns'] ) ) {
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
+	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 3 );
 }
 
 // Ensure visibility
@@ -64,6 +64,15 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			 */
 			do_action( 'woocommerce_shop_loop_item_title' );
 
+		if ( ! $post->post_excerpt ) {
+		return;
+	}
+
+	?>
+	<div itemprop="description">
+		<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+	</div>
+		<?php
 			/**
 			 * woocommerce_after_shop_loop_item_title hook
 			 *
@@ -72,10 +81,8 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			 */
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
-
+		<span class="more">find out more</span>
 	</a>
-
-
 
 	<?php
 
@@ -84,7 +91,8 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 		 *
 		 * @hooked woocommerce_template_loop_add_to_cart - 10
 		 */
-		do_action( 'woocommerce_after_shop_loop_item' );
+		// do_action( 'woocommerce_after_shop_loop_item' );
+
 
 	?>
 

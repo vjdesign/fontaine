@@ -1,7 +1,7 @@
 /* Logo - image replacement - http://www.goldenapplewebdesign.com/image-replacement/ */
 .logo {
 	position:relative;
-	width:316px;
+	width:488px;
 	height:92px;
 	display: inline-block;
 }
@@ -9,5 +9,29 @@
 	background:url('../img/fontaine_logo.jpg');
 	position:absolute;
 	width:316px;
-	height:92px;
+	height:75px;
+}
+@media (min-width: $bp-large) {
+	.logo span {
+		width:488px;
+		height:92px;
+	}
+}
+.cart-container {
+	display: inline-block;
+	background:url(../img/cart.jpg) no-repeat right center;
+	width:286px;
+	height:60px;
+	position: relative;
+}
+.cart-contents {
+	position: absolute;
+	line-height: 60px;
+	right: .5em;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.cart-contents:before {
+	content: "your cart: ";
 }

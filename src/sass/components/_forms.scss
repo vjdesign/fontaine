@@ -168,7 +168,6 @@ input[type="search"]::-webkit-search-decoration {
 	width: 85%;
 	padding-left: calc-em(15px);
 	padding-right: calc-em(40px);
-	border-radius: calc-em(21px);
 	transition: width 300ms ease-in;
 
 	@media (min-width: $bp-medium) {

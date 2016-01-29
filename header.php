@@ -11,17 +11,15 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><?php the_title ?></title>
+		<title><?php the_title(); echo " | "; echo get_bloginfo('name'); ?></title>
 		<?php if ( is_home () ) : ?><meta name="description" content="<?php bloginfo('description'); ?>"><?php endif; ?>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 		  ga('create', 'UA-46264438-11', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 		<!-- Mobile Screen Resizing -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +59,7 @@
 				</section>
 			<![endif]-->
 
-			<div class="row row-start-small">
+			<div class="row">
 				<div class="grid-half">
 
 					<a href="<?php echo get_home_url(); ?>" title="Go to <?php bloginfo('name'); ?>"><h1 class="logo"><span></span><?php bloginfo('name'); ?></h1></a>
@@ -80,11 +78,11 @@
 					<div class="mobilemenu clear">
 						<button id="toggleMenu" class="btn menu-toggle"><?php _e( 'Menu', 'keel' ) ?>
 							<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 32 32"><path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
-								<span class="icon-fallback-text"></span>
+								<span class="icon-fallback-text">Menu</span>
 							</svg>
 						</button>
-						<?php get_template_part( 'searchform', 'Search' ); ?>
-						<a id="loginButton" class="btn mobile" href="">
+						<?php get_template_part( 'inc/searchform', 'Search' ); ?>
+						<a id="loginButton" class="btn mobile" href="<?php echo get_home_url(); ?>/my-account/">
 							<span class=""><?php _e( 'Login', 'keel' ) ?> </span>
 							<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 32 32"><path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"/></svg>
 						</a>
@@ -96,16 +94,15 @@
 					<?php
 						// Get site navigation
 						 get_template_part( 'inc/nav-main', 'Site Navigation' );
-						//get_template_part( 'nav-sf', 'Site Navigation' );
 					?>
 				</div>
 			</div>
 		</header>
 
 	<div class="row">
-				<?php if ( is_page_template('page-fullwidth.php') ) : ?>
-					<div class="grid-full">
-				<?php elseif ( is_page_template('front-page.php') ) : ?>
+				<?php if ( is_page_template('woocommerce.php') ) : ?>
+					<div class="grid-three-fourths grid-flip">
+				<?php elseif ( !is_page_template('page-plain.php') ) : ?>
 					<div class="grid-full">
 				<?php else : ?>
 					<div class="grid-three-fourths grid-flip">
